@@ -1,6 +1,9 @@
 <template>
   <div class="barner">
     <div class="barner__content">
+      <router-link to="/about" class="banner__home">
+        About
+      </router-link>
       <div class="barnner__social">
         <a href="https://www.facebook.com/crispengari">
           <v-icon class="barnner__social__facebook">
@@ -95,7 +98,7 @@ export default {
       font-size: 30px;
     }
     .barnner__social__github {
-      color: #24292e;
+      color: white;
       cursor: pointer;
       font-size: 30px;
     }
@@ -106,10 +109,21 @@ export default {
     padding: 10px;
     display: grid;
     place-items: center;
+    .banner__home {
+      outline: none;
+      cursor: pointer;
+      text-decoration: none;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 20px;
+      font-weight: 600;
+      user-select: none;
+    }
     h1 {
       color: white;
       letter-spacing: 2px;
-      font-size: 25px;
+      font-size: 20px;
       font-weight: 500;
       text-align: center;
       position: relative;
@@ -239,9 +253,28 @@ export default {
       opacity: 1;
     }
   }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 425px) {
+    .barner__content > h1 {
+      font-size: 15px !important;
+    }
+    .barner__content > p > span {
+      font-size: 12px !important;
+    }
     .barner__content > h1 > small {
       display: none !important;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .barner__content > h1 {
+      font-size: 15px !important;
+    }
+    .barner__content > p > span {
+      font-size: 12px !important;
+    }
+  }
+  @media (orientation: landscape) {
+    .barner__content > h1 > small {
+      display: inline-flex !important;
     }
   }
 }

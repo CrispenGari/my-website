@@ -12,6 +12,9 @@ const techs = [
       { icon: "mdi-language-javascript", color: "#1d74b7" },
       { icon: "mdi-language-python", color: "#1d74b7" },
       { icon: "mdi-language-java", color: "#1d74b7" },
+      { icon: "mdi-language-c", color: "#1d74b7" },
+      { icon: "mdi-language-cpp", color: "#1d74b7" },
+      { icon: "mdi-language-typescript", color: "#1d74b7" },
     ],
   },
   {
@@ -27,6 +30,9 @@ const techs = [
       { icon: "mdi-language-javascript", color: "#1d74b7" },
       { icon: "mdi-language-python", color: "#1d74b7" },
       { icon: "mdi-language-java", color: "#1d74b7" },
+      { icon: "mdi-language-c", color: "#1d74b7" },
+      { icon: "mdi-language-cpp", color: "#1d74b7" },
+      { icon: "mdi-language-typescript", color: "#1d74b7" },
     ],
   },
   {
@@ -43,6 +49,9 @@ const techs = [
       { icon: "mdi-language-javascript", color: "#1d74b7" },
       { icon: "mdi-language-python", color: "#1d74b7" },
       { icon: "mdi-language-java", color: "#1d74b7" },
+      { icon: "mdi-language-c", color: "#1d74b7" },
+      { icon: "mdi-language-cpp", color: "#1d74b7" },
+      { icon: "mdi-language-typescript", color: "#1d74b7" },
     ],
   },
   {
@@ -58,6 +67,9 @@ const techs = [
       { icon: "mdi-language-javascript", color: "#1d74b7" },
       { icon: "mdi-language-python", color: "#1d74b7" },
       { icon: "mdi-language-java", color: "#1d74b7" },
+      { icon: "mdi-language-c", color: "#1d74b7" },
+      { icon: "mdi-language-cpp", color: "#1d74b7" },
+      { icon: "mdi-language-typescript", color: "#1d74b7" },
     ],
   },
 ];

@@ -38,6 +38,10 @@ export default {
     font-size: 20px;
     text-transform: uppercase;
     user-select: none;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: white;
   }
   .home__container {
     display: flex;
@@ -81,6 +85,11 @@ export default {
       cursor: pointer;
       font-size: 30px;
     }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .home > h1 {
+    font-size: 14px !important;
   }
 }
 </style>

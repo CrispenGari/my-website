@@ -1,10 +1,8 @@
 <template>
   <div class="datascience">
     <DBarnner :banner="banner" />
-    <div class="datasince__container">
-      <h1>Data Science</h1>
-      <div class="datasince__container__items"></div>
-    </div>
+    <h1>Data Science</h1>
+    <div class="datasince__container"></div>
     <Footer />
   </div>
 </template>
@@ -33,9 +31,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.datasince__container {
-  display: flex;
-  flex-direction: column;
+.datascience {
+  .datascience__container {
+    display: flex;
+  }
   h1 {
     width: 100%;
     border-bottom: 1px solid lightgrey;
@@ -47,8 +46,10 @@ export default {
     text-transform: uppercase;
     margin-bottom: 10px;
   }
-  .datasince__container__items {
-    padding: 10px;
+}
+@media only screen and (max-width: 425px) {
+  .datascience > h1 {
+    font-size: 14px !important;
   }
 }
 </style>

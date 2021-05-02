@@ -62,7 +62,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .barner {
-  /*background: url(../../assets/ai.gif);*/
   width: 100%;
   height: 50vh;
   background-size: cover;
@@ -102,7 +101,7 @@ export default {
       font-size: 30px;
     }
     .barnner__social__github {
-      color: #24292e;
+      color: white;
       cursor: pointer;
       font-size: 30px;
     }
@@ -127,7 +126,7 @@ export default {
     h1 {
       color: white;
       letter-spacing: 2px;
-      font-size: 25px;
+      font-size: 20px;
       font-weight: 500;
       text-align: center;
       position: relative;
@@ -136,11 +135,13 @@ export default {
       user-select: none;
       display: flex;
       flex-direction: column;
+      align-items: center;
       small {
         color: white;
         font-weight: normal;
         font-size: 12px !important;
         letter-spacing: unset;
+        text-align: center !important;
       }
     }
     p {
@@ -185,9 +186,29 @@ export default {
       opacity: 1;
     }
   }
-  @media only screen and (max-width: 1000px) {
+
+  @media only screen and (max-width: 425px) {
+    .barner__content > h1 {
+      font-size: 15px !important;
+    }
+    .barner__content > p > span {
+      font-size: 12px !important;
+    }
     .barner__content > h1 > small {
       display: none !important;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .barner__content > h1 {
+      font-size: 15px !important;
+    }
+    .barner__content > p > span {
+      font-size: 12px !important;
+    }
+  }
+  @media (orientation: landscape) {
+    .barner__content > h1 > small {
+      display: inline-flex !important;
     }
   }
 }
