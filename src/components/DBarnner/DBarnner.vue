@@ -1,7 +1,9 @@
 <template>
   <div
     class="barner"
-    :style="{ 'background-image': 'url(' + banner.image + ')' }"
+    :style="{
+      'background-image': 'url(' + background + ')',
+    }"
   >
     <Nav />
     <div class="barner__content">
@@ -39,10 +41,10 @@
 
       <h1>
         Hello, Welcome to Crispen Gari's site.
-        <small>{{ banner.quote }}</small>
+        <small>{{ qoute }}</small>
       </h1>
-      <p :style="{ color: banner.color }">
-        {{ banner.displayName }}
+      <p :style="{ color: color }">
+        {{ displayName }}
       </p>
     </div>
   </div>
@@ -60,7 +62,16 @@ export default {
   },
   computed: {
     background() {
-      return `u`;
+      return this.banner ? this.banner.image : "";
+    },
+    qoute() {
+      return this.banner ? this.banner.qoute : "";
+    },
+    color() {
+      return this.banner ? this.banner.color : "";
+    },
+    displayName() {
+      return this.banner ? this.banner.displayName : "";
     },
   },
 };

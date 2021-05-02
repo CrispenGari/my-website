@@ -38,7 +38,7 @@ const abouts = [
     color: "#8731d2",
     iconColor: "orange",
     title: "Birthday",
-    id: 4,
+    id: 5,
     content: "I was born 5 October 1999",
   },
   {
