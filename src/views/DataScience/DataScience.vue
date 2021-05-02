@@ -2,24 +2,29 @@
   <div class="datascience">
     <DBarnner :banner="banner" />
     <h1>Data Science</h1>
-    <div class="datasince__container"></div>
+    <div class="datasience__container">
+      <Tech v-for="tech in datascience" :key="tech.id" :tech="tech" />
+    </div>
     <Footer />
   </div>
 </template>
 
 <script>
-import { DBarnner, Footer } from "../../components";
+import { DBarnner, Footer, Tech } from "../../components";
 import banners from "../../utils/banners";
+import datascience from "../../utils/datascience";
 export default {
   name: "DataScience",
   data() {
     return {
       banner: null,
+      datascience: datascience,
     };
   },
   components: {
     DBarnner,
     Footer,
+    Tech,
   },
   mounted() {
     this.banner = banners.filter(
@@ -32,8 +37,10 @@ export default {
 
 <style lang="scss" scoped>
 .datascience {
-  .datascience__container {
+  .datasience__container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   h1 {
     width: 100%;

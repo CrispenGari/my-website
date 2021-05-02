@@ -3,3 +3,4 @@ export { default as NavItem } from "./NavItem/NavItem";
 export { default as Footer } from "./Footer/Footer";
 export { default as DBarnner } from "./DBarnner/DBarnner";
 export { default as AboutContent } from "./AboutContent/AboutContent";
+export { default as Tech } from "./Tech/Tech";
