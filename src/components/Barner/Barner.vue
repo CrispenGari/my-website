@@ -47,12 +47,17 @@
         </span>
       </p>
     </div>
+    <Nav />
   </div>
 </template>
 
 <script>
+import { Nav } from "../../components";
 export default {
   name: "Barner",
+  components: {
+    Nav,
+  },
 };
 </script>
 

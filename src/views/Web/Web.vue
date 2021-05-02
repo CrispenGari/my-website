@@ -2,7 +2,7 @@
   <div class="web">
     <DBarnner :banner="banner" />
     <h1>Web Development</h1>
-    <div class="web__container"></div>
+    <div class="web__container"><h1>No Techs Deployed yet.</h1></div>
     <Footer />
   </div>
 </template>
@@ -41,10 +41,14 @@ export default {
     margin-bottom: 10px;
   }
   .web__container {
-    display: flex;
-    flex-direction: column;
-    .web__container__items {
-      padding: 10px;
+    display: grid;
+    place-items: center;
+    height: 40vh;
+    h1 {
+      align-items: center;
+      border-bottom: none;
+      font-family: "Source Code Pro", Consolas, "Liberation Mono", Menlo,
+        Courier, monospace !important;
     }
   }
 }

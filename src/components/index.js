@@ -4,3 +4,4 @@ export { default as Footer } from "./Footer/Footer";
 export { default as DBarnner } from "./DBarnner/DBarnner";
 export { default as AboutContent } from "./AboutContent/AboutContent";
 export { default as Tech } from "./Tech/Tech";
+export { default as Nav } from "./Nav/Nav";

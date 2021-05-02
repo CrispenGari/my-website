@@ -2,7 +2,7 @@
   <div class="mobile">
     <DBarnner :banner="banner" />
     <h1>Mobile Development</h1>
-    <div class="mobile__container"></div>
+    <div class="mobile__container"><h1>No Techs Deployed yet.</h1></div>
     <Footer />
   </div>
 </template>
@@ -41,11 +41,14 @@ export default {
     margin-bottom: 10px;
   }
   .mobile__container {
-    display: flex;
-    flex-direction: column;
-
-    .mobile__container__items {
-      padding: 10px;
+    display: grid;
+    place-items: center;
+    height: 40vh;
+    h1 {
+      align-items: center;
+      border-bottom: none;
+      font-family: "Source Code Pro", Consolas, "Liberation Mono", Menlo,
+        Courier, monospace !important;
     }
   }
 }

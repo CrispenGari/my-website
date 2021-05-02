@@ -2,7 +2,9 @@
   <div class="desktop">
     <DBarnner :banner="banner" />
     <h1>Desktop Development</h1>
-    <div class="desktop__container"></div>
+    <div class="desktop__container">
+      <h1>No Techs Provided Yet</h1>
+    </div>
     <Footer />
   </div>
 </template>
@@ -44,7 +46,15 @@ export default {
     margin-bottom: 10px;
   }
   .desktop__container {
-    display: flex;
+    display: grid;
+    place-items: center;
+    height: 40vh;
+    h1 {
+      align-items: center;
+      border-bottom: none;
+      font-family: "Source Code Pro", Consolas, "Liberation Mono", Menlo,
+        Courier, monospace !important;
+    }
   }
 }
 @media only screen and (max-width: 425px) {

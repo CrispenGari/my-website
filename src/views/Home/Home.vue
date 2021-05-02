@@ -5,12 +5,13 @@
     <div class="home__container">
       <NavItem v-for="tech in techs" :key="tech.id" :tech="tech" />
     </div>
+    <Nav />
     <Footer />
   </div>
 </template>
 
 <script>
-import { Barner, NavItem, Footer } from "../../components";
+import { Barner, NavItem, Footer, Nav } from "../../components";
 import techs from "../../utils";
 export default {
   name: "Home",
@@ -18,6 +19,7 @@ export default {
     Barner,
     NavItem,
     Footer,
+    Nav,
   },
   data() {
     return {
