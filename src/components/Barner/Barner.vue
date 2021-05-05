@@ -34,11 +34,10 @@
 
       <h1>
         Hello, Welcome to Crispen Gari's site.
-        <small
-          >Everything should be made as simple as possible, but not simpler —
-          ALBERT EINSTEIN</small
-        >
       </h1>
+      <small
+        >{{ qoute.title }} ― <strong>{{ qoute.author }}</strong></small
+      >
       <p>
         <span> Data Science, </span><span> Web Development, </span
         ><span> Mobile Development</span> <span>and</span
@@ -51,9 +50,27 @@
 </template>
 
 <script>
+import qoutes from "../../utils/qoutes";
+
 export default {
   name: "Barner",
   components: {},
+  data() {
+    return {
+      qoutes: qoutes,
+      quoteIndex: 0,
+    };
+  },
+  mounted() {
+    setInterval(() => {
+      this.quoteIndex = Math.round(Math.random() * 1000) % this?.qoutes?.length;
+    }, 5000);
+  },
+  computed: {
+    qoute() {
+      return qoutes[this.quoteIndex];
+    },
+  },
 };
 </script>
 
@@ -133,11 +150,21 @@ export default {
       user-select: none;
       display: flex;
       flex-direction: column;
-      small {
+    }
+    small {
+      color: white;
+      font-weight: normal;
+      font-size: 12px !important;
+      letter-spacing: unset;
+      letter-spacing: 2px;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      strong {
         color: white;
-        font-weight: normal;
-        font-size: 12px !important;
-        letter-spacing: unset;
+        letter-spacing: 2px;
       }
     }
     p {
@@ -243,7 +270,7 @@ export default {
       right: 0;
     }
   }
-  .barner__content > h1 > small {
+  .barner__content > small {
     animation: small-animation 10s ease-out 1s 1 alternate forwards !important;
   }
   @keyframes small-animation {
@@ -261,7 +288,7 @@ export default {
     .barner__content > p > span {
       font-size: 12px !important;
     }
-    .barner__content > h1 > small {
+    .barner__content > small {
       display: none !important;
     }
   }
@@ -274,7 +301,7 @@ export default {
     }
   }
   @media (orientation: landscape) {
-    .barner__content > h1 > small {
+    .barner__content > small {
       display: inline-flex !important;
     }
   }

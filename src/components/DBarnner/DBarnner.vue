@@ -9,7 +9,6 @@
       <router-link to="/" class="banner__home">
         Home
       </router-link>
-
       <div class="barnner__social">
         <a href="https://www.facebook.com/crispengari">
           <v-icon class="barnner__social__facebook">
@@ -40,8 +39,10 @@
 
       <h1>
         Hello, Welcome to Crispen Gari's site.
-        <small>{{ qoute }}</small>
       </h1>
+      <small
+        >{{ quote.title }} ― <strong>{{ quote.author }}</strong></small
+      >
       <p :style="{ color: color }">
         {{ displayName }}
       </p>
@@ -51,17 +52,28 @@
 
 <script>
 export default {
-  name: "D_Barnner",
+  name: "DBarnner",
   props: {
     banner: Object,
   },
   components: {},
+  data() {
+    return {
+      qouteIndex: 0,
+    };
+  },
+  mounted() {
+    setInterval(() => {
+      this.qouteIndex =
+        Math.round(Math.random() * 1000) % this.banner?.quotes?.length;
+    }, 5000);
+  },
   computed: {
     background() {
       return this.banner ? this.banner.image : "";
     },
-    qoute() {
-      return this.banner ? this.banner.qoute : "";
+    quote() {
+      return this.banner ? this.banner.quotes[this.qouteIndex] : "";
     },
     color() {
       return this.banner ? this.banner.color : "";
@@ -148,12 +160,16 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: center;
-      small {
-        color: white;
-        font-weight: normal;
-        font-size: 12px !important;
-        letter-spacing: unset;
-        text-align: center !important;
+    }
+    small {
+      color: white;
+      font-weight: normal;
+      font-size: 12px !important;
+      letter-spacing: unset;
+      text-align: center !important;
+      letter-spacing: 2px;
+      strong {
+        color: white !important;
       }
     }
     p {
@@ -187,7 +203,7 @@ export default {
     }
   }
 
-  .barner__content > h1 > small {
+  .barner__content > small {
     animation: small-animation 10s ease-out 1s 1 alternate forwards !important;
   }
   @keyframes small-animation {
@@ -199,14 +215,14 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 725px) {
     .barner__content > h1 {
       font-size: 15px !important;
     }
     .barner__content > p > span {
       font-size: 12px !important;
     }
-    .barner__content > h1 > small {
+    .barner__content > small {
       display: none !important;
     }
   }
@@ -219,9 +235,9 @@ export default {
     }
   }
   @media (orientation: landscape) {
-    .barner__content > h1 > small {
-      display: inline-flex !important;
-    }
+    // .barner__content > small {
+    //   display: none !important;
+    // }
   }
 }
 </style>

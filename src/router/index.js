@@ -21,7 +21,7 @@ const routes = [
   { name: "Projects", path: "/projects", component: Projects },
   { name: "About", path: "/about", component: About },
 ];
-console.log(routes);
+
 const router = new VueRouter({
   routes: routes,
 });
