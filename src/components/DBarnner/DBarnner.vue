@@ -87,6 +87,7 @@ export default {
 <style lang="scss" scoped>
 .barner {
   width: 100%;
+  user-select: none !important;
   height: 50vh;
   background-size: cover;
   background-repeat: no-repeat;

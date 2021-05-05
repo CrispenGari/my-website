@@ -34,13 +34,9 @@ export default {
     justify-content: space-between;
     user-select: none;
     text-transform: uppercase;
-    font-family: "Source Code Pro", Consolas, "Liberation Mono", Menlo, Courier,
-      monospace !important;
   }
   p {
     padding: 40px 10px 10px 10px;
-    font-family: "Source Code Pro", Consolas, "Liberation Mono", Menlo, Courier,
-      monospace !important;
   }
 }
 .aboutcontent:nth-child(odd) {

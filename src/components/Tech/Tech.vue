@@ -2,14 +2,10 @@
   <div class="tech">
     <h1>{{ tech.name }}</h1>
     <p>
-      Natural language processing (NLP) is a subfield of linguistics, computer
-      science, and artificial intelligence concerned with the interactions
-      between computers and human language, in particular how to program
-      computers to process and analyze large amounts of natural language data.
+      {{ tech.definition }}
     </p>
     <p>
-      Building NLP applications using different technologies such as TextBlob,
-      Spacy, NLTK, etc.
+      {{ tech.usage }}
     </p>
     <p>
       <v-icon

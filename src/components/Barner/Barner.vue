@@ -1,9 +1,15 @@
 <template>
   <div class="barner">
     <div class="barner__content">
-      <router-link to="/about" class="banner__home">
-        About
-      </router-link>
+      <div class="barner__content__navs">
+        <router-link to="/about" class="banner__home">
+          About
+        </router-link>
+        <router-link to="/projects" class="banner__home">
+          Projects
+        </router-link>
+      </div>
+
       <div class="barnner__social">
         <a href="https://www.facebook.com/crispengari">
           <v-icon class="barnner__social__facebook">
@@ -84,6 +90,7 @@ export default {
   position: relative;
   display: flex;
   flex-direction: column;
+  user-select: none !important;
   .barnner__social {
     position: absolute;
     top: 10px;
@@ -127,16 +134,21 @@ export default {
     padding: 10px;
     display: grid;
     place-items: center;
-    .banner__home {
+    .barner__content__navs {
       outline: none;
       cursor: pointer;
       text-decoration: none;
       position: absolute;
       top: 10px;
       left: 10px;
-      font-size: 20px;
-      font-weight: 600;
-      user-select: none;
+      display: flex;
+      .banner__home {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        user-select: none;
+        margin-right: 10px !important;
+      }
     }
     h1 {
       color: white;
@@ -281,7 +293,7 @@ export default {
       opacity: 1;
     }
   }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 725px) {
     .barner__content > h1 {
       font-size: 15px !important;
     }
@@ -290,6 +302,10 @@ export default {
     }
     .barner__content > small {
       display: none !important;
+    }
+    .barnner__social {
+      top: 80%;
+      right: 10px;
     }
   }
   @media only screen and (max-width: 1200px) {
@@ -301,9 +317,9 @@ export default {
     }
   }
   @media (orientation: landscape) {
-    .barner__content > small {
-      display: inline-flex !important;
-    }
+    // .barner__content > small {
+    //   display: inline-flex !important;
+    // }
   }
 }
 </style>

@@ -143,6 +143,14 @@ const banners = [
     quotes: qoutes,
     color: "#0074e8",
   },
+  {
+    name: "projects",
+    image:
+      "https://cdn.searchenginejournal.com/wp-content/uploads/2019/08/managing-global-search-projects-760x400.png",
+    displayName: "Projects",
+    quotes: qoutes,
+    color: "#0074e8",
+  },
 ];
 
 export default banners;
