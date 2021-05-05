@@ -5,7 +5,6 @@
       'background-image': 'url(' + background + ')',
     }"
   >
-    <Nav />
     <div class="barner__content">
       <router-link to="/" class="banner__home">
         Home
@@ -51,15 +50,12 @@
 </template>
 
 <script>
-import { Nav } from "../../components";
 export default {
   name: "D_Barnner",
   props: {
     banner: Object,
   },
-  components: {
-    Nav,
-  },
+  components: {},
   computed: {
     background() {
       return this.banner ? this.banner.image : "";
