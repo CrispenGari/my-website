@@ -2,20 +2,24 @@
   <div class="web">
     <DBarnner :banner="banner" />
     <h1>Web Development</h1>
-    <div class="web__container"><h1>No Techs Deployed yet.</h1></div>
+    <div class="web__container">
+      <Tech v-for="tech in web" :key="tech.id" :tech="tech" />
+    </div>
     <Footer />
   </div>
 </template>
 
 <script>
-import { DBarnner, Footer } from "../../components";
+import { DBarnner, Footer, Tech } from "../../components";
 import banners from "../../utils/banners";
+import web from "../../utils/web";
 export default {
   name: "Web",
-  components: { DBarnner, Footer },
+  components: { DBarnner, Footer, Tech },
   data() {
     return {
       banner: null,
+      web: web,
     };
   },
   mounted() {
@@ -43,7 +47,9 @@ export default {
   .web__container {
     display: grid;
     place-items: center;
-    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     h1 {
       align-items: center;
       border-bottom: none;

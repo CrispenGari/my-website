@@ -1,10 +1,5 @@
 <template>
-  <div
-    class="barner"
-    :style="{
-      'background-image': 'url(' + background + ')',
-    }"
-  >
+  <div :class="`barner ${background}`">
     <div class="barner__content">
       <router-link to="/" class="banner__home">
         Home
@@ -70,7 +65,7 @@ export default {
   },
   computed: {
     background() {
-      return this.banner ? this.banner.image : "";
+      return this.banner ? this.banner.name : "";
     },
     quote() {
       return this.banner ? this.banner.quotes[this.qouteIndex] : "";
@@ -85,6 +80,24 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.barner.projects {
+  background: url(../../assets/images/project.jpg);
+}
+.barner.mobile {
+  background: url(../../assets/images/mobile.jpeg);
+}
+.barner.datascience {
+  background: url(../../assets/images/datascience.png);
+}
+.barner.desktop {
+  background: url(../../assets/images/desktop.jpg);
+}
+.barner.web {
+  background: url(../../assets/images/web.png);
+}
+.barner.about {
+  background: url(../../assets/images/about.gif);
+}
 .barner {
   width: 100%;
   user-select: none !important;

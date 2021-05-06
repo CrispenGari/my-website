@@ -57,7 +57,6 @@ export default {
   background: black;
   color: white;
   padding: 10px 10px 20px 10px;
-
   .footer__container {
     margin: 10px;
     display: flex;
