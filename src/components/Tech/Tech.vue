@@ -49,4 +49,12 @@ export default { name: "Tech", props: { tech: Object } };
     opacity: 1;
   }
 }
+p:first-of-type::first-letter {
+  color: #1faac7 !important;
+  float: left;
+  font-size: 5em;
+  line-height: 0.5em;
+  padding-bottom: 0.05em;
+  padding-top: 0.2em;
+}
 </style>
