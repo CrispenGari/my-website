@@ -4,6 +4,10 @@
     <p>
       {{ tech.definition }}
     </p>
+    <div class="tech__image" v-if="tech.image">
+      <img :src="tech.image" alt="tech-barner" />
+    </div>
+
     <p>
       {{ tech.usage }}
     </p>
@@ -39,6 +43,15 @@ export default { name: "Tech", props: { tech: Object } };
     animation: tech-animation 2s ease-in 1s 1 alternate forwards;
     opacity: 0.5;
     user-select: none;
+  }
+  .tech__image {
+    position: relative !important;
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+      -webkit-user-drag: none;
+    }
   }
 }
 @keyframes tech-animation {

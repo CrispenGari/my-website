@@ -3,7 +3,23 @@
     <DBarnner :banner="banner" />
     <h1>Data Science</h1>
     <div class="datasience__container">
-      <Tech v-for="tech in datascience" :key="tech.id" :tech="tech" />
+      <Tech
+        v-for="tech in datascience.filter(
+          (tech) => tech.category === 'library'
+        )"
+        :key="tech.id"
+        :tech="tech"
+      />
+    </div>
+    <h1>Applications</h1>
+    <div class="datasience__container">
+      <Tech
+        v-for="tech in datascience.filter(
+          (tech) => tech.category !== 'library'
+        )"
+        :key="tech.id"
+        :tech="tech"
+      />
     </div>
     <Footer />
   </div>
