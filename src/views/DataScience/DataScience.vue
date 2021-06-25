@@ -1,5 +1,6 @@
 <template>
   <div class="datascience">
+    <Header />
     <DBarnner :banner="banner" />
     <h1>Data Science</h1>
     <div class="datasience__container">
@@ -26,7 +27,7 @@
 </template>
 
 <script>
-import { DBarnner, Footer, Tech } from "../../components";
+import { DBarnner, Footer, Tech, Header } from "../../components";
 import banners from "../../utils/banners";
 import datascience from "../../utils/datascience";
 export default {
@@ -41,6 +42,7 @@ export default {
     DBarnner,
     Footer,
     Tech,
+    Header,
   },
   mounted() {
     this.banner = banners.filter(

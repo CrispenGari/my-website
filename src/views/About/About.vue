@@ -1,5 +1,6 @@
 <template>
   <div class="about">
+    <Header />
     <DBarnner :banner="banner" />
     <h1>About Me</h1>
     <div class="about__container">
@@ -21,13 +22,14 @@
 </template>
 
 <script>
-import { DBarnner, Footer, AboutContent } from "../../components";
+import { DBarnner, Footer, AboutContent, Header } from "../../components";
 import banners from "../../utils/banners";
 import abouts from "../../utils/about";
 export default {
   name: "About",
   components: {
     DBarnner,
+    Header,
     Footer,
     AboutContent,
   },

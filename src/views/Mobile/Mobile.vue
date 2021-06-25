@@ -1,5 +1,6 @@
 <template>
   <div class="mobile">
+    <Header />
     <DBarnner :banner="banner" />
     <h1>Mobile Development</h1>
     <div class="mobile__container"><h1>No Techs Deployed yet.</h1></div>
@@ -8,11 +9,11 @@
 </template>
 
 <script>
-import { DBarnner, Footer } from "../../components";
+import { DBarnner, Footer, Header } from "../../components";
 import banners from "../../utils/banners";
 export default {
   name: "Mobile",
-  components: { DBarnner, Footer },
+  components: { DBarnner, Footer, Header },
   data() {
     return {
       banner: null,

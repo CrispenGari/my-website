@@ -1,5 +1,6 @@
 <template>
   <div class="web">
+    <Header />
     <DBarnner :banner="banner" />
     <h1>Web Development</h1>
     <div class="web__container">
@@ -10,12 +11,12 @@
 </template>
 
 <script>
-import { DBarnner, Footer, Tech } from "../../components";
+import { DBarnner, Footer, Tech, Header } from "../../components";
 import banners from "../../utils/banners";
 import web from "../../utils/web";
 export default {
   name: "Web",
-  components: { DBarnner, Footer, Tech },
+  components: { DBarnner, Footer, Tech, Header },
   data() {
     return {
       banner: null,

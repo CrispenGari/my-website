@@ -1,9 +1,6 @@
 <template>
   <div :class="`barner ${background}`">
     <div class="barner__content">
-      <router-link to="/" class="banner__home">
-        Home
-      </router-link>
       <div class="barnner__social">
         <a href="https://www.facebook.com/crispengari">
           <v-icon class="barnner__social__facebook">
@@ -101,7 +98,7 @@ export default {
 .barner {
   width: 100%;
   user-select: none !important;
-  height: 50vh;
+  height: 80vh;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;

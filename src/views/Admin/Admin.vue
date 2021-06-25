@@ -1,8 +1,8 @@
 <script>
-import { Barner, Form } from "../../components";
+import { Barner, Form, Header, Footer } from "../../components";
 export default {
   name: "Admin",
-  components: { Barner, Form },
+  components: { Barner, Form, Header, Footer },
   data() {
     return {};
   },
@@ -11,8 +11,10 @@ export default {
 
 <template>
   <div class="admin">
+    <Header />
     <Barner />
     <Form />
+    <Footer />
   </div>
 </template>
 

@@ -1,15 +1,6 @@
 <template>
   <div class="barner">
     <div class="barner__content">
-      <div class="barner__content__navs">
-        <router-link to="/about" class="banner__home">
-          About
-        </router-link>
-        <router-link to="/projects" class="banner__home">
-          Projects
-        </router-link>
-      </div>
-
       <div class="barnner__social">
         <a href="https://www.facebook.com/crispengari">
           <v-icon class="barnner__social__facebook">
@@ -84,7 +75,7 @@ export default {
 .barner {
   background: url(../../assets/ai.gif);
   width: 100%;
-  height: 50vh;
+  height: 80vh;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -134,22 +125,6 @@ export default {
     padding: 10px;
     display: grid;
     place-items: center;
-    .barner__content__navs {
-      outline: none;
-      cursor: pointer;
-      text-decoration: none;
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      display: flex;
-      .banner__home {
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: 600;
-        user-select: none;
-        margin-right: 10px !important;
-      }
-    }
     h1 {
       color: white;
       letter-spacing: 2px;
