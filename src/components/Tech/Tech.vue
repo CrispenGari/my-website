@@ -5,7 +5,7 @@
       {{ tech.definition }}
     </p>
     <div class="tech__image" v-if="tech.image">
-      <img :src="tech.image" alt="tech-barner" />
+      <img :src="tech.image" alt="tech-barner" loading="lazy" />
     </div>
 
     <p>

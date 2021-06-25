@@ -278,10 +278,6 @@ export default {
     .barner__content > small {
       display: none !important;
     }
-    .barnner__social {
-      top: 80%;
-      right: 10px;
-    }
   }
   @media only screen and (max-width: 1200px) {
     .barner__content > h1 {
