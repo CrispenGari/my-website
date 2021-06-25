@@ -74,6 +74,7 @@ export default {
   color: #42b983 !important;
 }
 .header {
+  user-select: none;
   display: flex;
   padding: 20px;
   position: sticky;
@@ -112,15 +113,23 @@ export default {
 }
 @media only screen and(max-width:600px) {
   .header__nav {
-    font-size: 13px;
+    font-size: 13px !important;
   }
   .header {
     padding: 10px;
   }
+  .header__content__navs > .header__nav {
+    display: none !important;
+  }
+  .header__content__navs > .header__nav:last-of-type,
+  .header__content__navs > .header__nav:nth-last-of-type(2) {
+    display: flex !important;
+  }
 }
+
 @media only screen and(max-width:1000px) {
   .header__nav {
-    font-size: 13px;
+    font-size: 15px !important;
   }
   .header {
     padding: 20px 10px;
