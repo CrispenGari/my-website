@@ -1,12 +1,16 @@
 <template>
-  <router-link :to="tech.path" class="naviterm">
-    <h1 :style="{ color: tech.color }">
+  <div class="naviterm">
+    <router-link
+      :to="tech.path"
+      class="naviterm__link"
+      :style="{ color: tech.color }"
+    >
       {{ tech.name }}
 
       <v-icon :style="{ color: tech.iconColor }">
         {{ tech.icon }}
       </v-icon>
-    </h1>
+    </router-link>
     <p>
       {{ tech.explanation }}
     </p>
@@ -19,7 +23,7 @@
         {{ lang.icon }}
       </v-icon>
     </div>
-  </router-link>
+  </div>
 </template>
 
 <script>
@@ -36,17 +40,20 @@ export default {
   width: 100%;
   padding: 10px;
   max-width: 500px;
-  border: 1px solid lightgrey;
   margin: 10px;
   position: relative;
-  cursor: pointer;
   text-decoration: none !important;
-  h1 {
-    padding: 10px;
+  user-select: none;
+  user-zoom: none;
+  .naviterm__link {
+    padding: 10px 0;
+    cursor: pointer;
     border-bottom: 1px solid lightgrey;
     display: flex;
     justify-content: space-between;
     user-select: none;
+    text-decoration: none;
+    font-weight: 500;
   }
   p {
     padding-top: 40px;
@@ -60,6 +67,7 @@ export default {
 }
 .naviterm:nth-child(even) {
   animation: navitem-even-child 2s ease-in 1s 1 alternate forwards;
+  right: -600px;
 }
 @keyframes navitem-even-child {
   from {
@@ -71,20 +79,10 @@ export default {
 }
 @keyframes navitem-odd-child {
   from {
-    left: -600px;
+    opacity: 0.5;
   }
   to {
-    left: 0;
+    opacity: 1;
   }
-}
-.naviterm:hover {
-  transform: scale(1.04) rotateY(180deg);
-  background: black;
-}
-.naviterm:hover > h1,
-.naviterm:hover > p,
-.naviterm:hover > .navitems__langs {
-  transform: rotateY(180deg);
-  color: white;
 }
 </style>

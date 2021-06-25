@@ -43,6 +43,10 @@ export default {
     padding: 10px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: white !important;
+    z-index: 10;
   }
   .web__container {
     display: grid;

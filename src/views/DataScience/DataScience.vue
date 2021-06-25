@@ -68,11 +68,18 @@ export default {
     padding: 10px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: white !important;
+    z-index: 10;
   }
 }
 @media only screen and (max-width: 425px) {
   .datascience > h1 {
     font-size: 14px !important;
   }
+}
+.datascience > h1:first-of-type {
+  z-index: 100 !important;
 }
 </style>

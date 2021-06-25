@@ -8,6 +8,7 @@ import {
   Mobile,
   Projects,
   About,
+  Admin,
 } from "../views";
 Vue.use(VueRouter);
 
@@ -20,6 +21,7 @@ const routes = [
   { name: "Mobile", path: "/mobile", component: Mobile },
   { name: "Projects", path: "/projects", component: Projects },
   { name: "About", path: "/about", component: About },
+  { name: "Admin", path: "/admin", component: Admin },
 ];
 
 const router = new VueRouter({

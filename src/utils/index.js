@@ -1,6 +1,6 @@
 const techs = [
   {
-    name: "Data Science",
+    name: "Data Science, Machine Learning, Deep Learning and AI.",
     color: "#1d74b7",
     explanation:
       "Building Machine Leaning(ML)/Deep Learning application using different technologies such as, PyTorch, TensorFlow, Scikit-Learn, Open Computer Vision etc.",
@@ -18,7 +18,7 @@ const techs = [
     ],
   },
   {
-    name: "Web Development",
+    name: "Full Stack Web Development and Web Apps",
     color: "#42b983",
     iconColor: "#1B74BA",
     explanation:
@@ -36,7 +36,7 @@ const techs = [
     ],
   },
   {
-    name: "Mobile Development",
+    name: "Mobile Development with JavaScript and TypeScript",
     color: "#8731d2",
     explanation:
       "Building Mobile application using Facebook React Technologies Expo + React Native.",
@@ -55,7 +55,7 @@ const techs = [
     ],
   },
   {
-    name: "Desktop Development",
+    name: "Native Desktop Development with JavaScript and TypeScript",
     color: "#0074e8",
     explanation:
       "Building Desktop Applications using Electron.js and Python TKinter techs.",

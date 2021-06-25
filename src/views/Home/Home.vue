@@ -3,7 +3,18 @@
     <Barner />
     <h1>Technologies</h1>
     <div class="home__container">
-      <NavItem v-for="tech in techs" :key="tech.id" :tech="tech" />
+      <NavItem
+        v-for="tech in techs.filter((tech) => tech.id === 1)"
+        :key="tech.id"
+        :tech="tech"
+      />
+      <div class="home__container__right">
+        <NavItem
+          v-for="tech in techs.filter((tech) => tech.id !== 1)"
+          :key="tech.id"
+          :tech="tech"
+        />
+      </div>
     </div>
 
     <Footer />
@@ -49,6 +60,10 @@ export default {
     flex-wrap: wrap;
     padding: 10px;
     justify-content: space-evenly;
+  }
+  .home__container__right {
+    display: flex;
+    flex-direction: column;
   }
   .barnner__social {
     position: absolute;

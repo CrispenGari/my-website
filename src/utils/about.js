@@ -4,7 +4,7 @@ const abouts = [
     color: "#8731d2",
     iconColor: "lightblue",
     title: "Likes",
-    id: 1,
+    id: 7,
     content:
       "Interested in Artificial Intelligence, Machine Learning, Open Computer Vision, Natural Language Processing. Also a huge fan of Web Development with React, Vue, Angular and Webpack.",
   },
@@ -55,7 +55,7 @@ const abouts = [
     color: "#8731d2",
     iconColor: "blue",
     title: "Programming History",
-    id: 7,
+    id: 1,
     content:
       "My programming history was a horror movie. I was enger to learn the world of technologies and explore on how computers interact with humans. I can say I'm a self taught developer who always love to read programming books and official documentations of languages and frameworks. I've coded different languages but i only fall in love with few.I've coded in Python, CSharp, C++, C, JavaScript, PHP, TypeScript and Java. I liked web technologies for such a long period now I'm a huge fan of Artificial Intelligence using Google TensorFlow, Scikit-Learn, PyTorch, etc.",
   },

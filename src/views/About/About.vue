@@ -3,7 +3,18 @@
     <DBarnner :banner="banner" />
     <h1>About Me</h1>
     <div class="about__container">
-      <AboutContent v-for="about in abouts" :key="about.id" :about="about" />
+      <AboutContent
+        v-for="about in abouts.filter((ab) => ab.id === 1)"
+        :key="about.id"
+        :about="about"
+      />
+      <div class="about__container__right">
+        <AboutContent
+          v-for="about in abouts.filter((ab) => ab.id !== 1)"
+          :key="about.id"
+          :about="about"
+        />
+      </div>
     </div>
     <Footer />
   </div>
@@ -54,6 +65,10 @@ export default {
     justify-content: space-evenly;
     padding: 10px;
     flex-wrap: wrap;
+  }
+  .about__container__right {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 425px) {

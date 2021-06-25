@@ -1,6 +1,6 @@
 <template>
-  <div class="aboutcontent">
-    <h1 :style="{ color: about.color }">
+  <div :class="about.id !== 1 ? 'aboutcontent' : 'aboutcontent-first'">
+    <h1 :style="{ color: about.id !== 1 ? about.color : '#42b983' }">
       {{ about.title }}
       <v-icon :style="{ color: about.iconColor }">{{ about.icon }} </v-icon>
     </h1>
@@ -18,17 +18,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.aboutcontent {
+.aboutcontent,
+.aboutcontent-first {
   width: 100%;
   max-width: 500px;
-  border: 1px solid lightgrey;
   margin: 10px;
   position: relative;
-  cursor: pointer;
   background: white;
   transition: all 1s ease-in;
+  right: -600px;
   h1 {
-    padding: 10px;
+    padding: 10px 0;
     border-bottom: 1px solid lightgrey;
     display: flex;
     justify-content: space-between;
@@ -36,16 +36,19 @@ export default {
     text-transform: uppercase;
   }
   p {
-    padding: 40px 10px 10px 10px;
+    padding: 40px 0;
   }
 }
-.aboutcontent:nth-child(odd) {
-  animation: navitem-odd-child 2s ease-in 1s 1 alternate forwards;
+.aboutcontent-first {
+  right: unset !important;
+  animation: first-child-animation 1.5s ease-in 1s 1 alternate forwards;
+  opacity: 0.5;
 }
-.aboutcontent:nth-child(even) {
-  animation: navitem-even-child 2s ease-in 1s 1 alternate forwards;
+.aboutcontent {
+  animation: navitem-child-odinary 1.5s ease-in 1s 1 alternate forwards;
 }
-@keyframes navitem-even-child {
+@keyframes navitem-child-odinary {
+  //
   from {
     right: -600px;
   }
@@ -53,22 +56,12 @@ export default {
     right: 0;
   }
 }
-@keyframes navitem-odd-child {
+@keyframes first-child-animation {
   from {
-    left: -600px;
+    opacity: 0.5;
   }
   to {
-    left: 0;
+    opacity: 1;
   }
-}
-.aboutcontent:hover {
-  transform: scale(1.04) rotateY(180deg);
-  background: black;
-}
-.aboutcontent:hover > h1,
-.aboutcontent:hover > p,
-.aboutcontent:hover > .navitems__langs {
-  transform: rotateY(180deg);
-  color: white;
 }
 </style>
