@@ -20,6 +20,7 @@ export default {
     };
   },
   mounted() {
+    console.log(this.banner);
     this.banner = banners.filter(
       (banner) =>
         String(this.$router.currentRoute.path).split("/")[1] === banner.name

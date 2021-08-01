@@ -32,9 +32,6 @@
       <h1>
         Hello, Welcome to Crispen Gari's site.
       </h1>
-      <small
-        >{{ qoute.title }} ― <strong>{{ qoute.author }}</strong></small
-      >
       <p>
         <span> Data Science, </span><span> Web Development, </span
         ><span> Mobile Development</span> <span>and</span
@@ -47,35 +44,22 @@
 </template>
 
 <script>
-import qoutes from "../../utils/qoutes";
-
 export default {
   name: "Barner",
   components: {},
   data() {
-    return {
-      qoutes: qoutes,
-      quoteIndex: 0,
-    };
-  },
-  mounted() {
-    setInterval(() => {
-      this.quoteIndex = Math.round(Math.random() * 1000) % this?.qoutes?.length;
-    }, 5000);
-  },
-  computed: {
-    qoute() {
-      return qoutes[this.quoteIndex];
-    },
+    return {};
   },
 };
 </script>
 
 <style lang="scss" scoped>
 .barner {
-  background: url(../../assets/ai.gif);
+  background-image: url(../../assets/ai.gif);
+  background-color: #1d74b7;
+  background-blend-mode: lighten;
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;

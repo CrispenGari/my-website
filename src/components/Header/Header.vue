@@ -54,7 +54,7 @@
       </router-link>
       <router-link
         active-class="header__nav__active"
-        to="/admin"
+        to="/admin-disabled"
         class="header__nav"
       >
         Admin
@@ -111,7 +111,7 @@ export default {
 .header__navs__left > .header__nav:last-of-type {
   color: black;
 }
-@media only screen and(max-width:600px) {
+@media only screen and(max-width: 600px) {
   .header__nav {
     font-size: 13px !important;
   }

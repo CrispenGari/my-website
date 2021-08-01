@@ -37,7 +37,7 @@ export default {
   h1 {
     width: 100%;
     border-bottom: 1px solid lightgrey;
-    font-size: 20px;
+    font-size: 0.9rem;
     letter-spacing: 2px;
     user-select: none;
     text-align: center;

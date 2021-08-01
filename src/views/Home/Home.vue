@@ -49,7 +49,7 @@ export default {
     border-bottom: 1px solid lightgray;
     text-align: center;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 0.9rem;
     text-transform: uppercase;
     user-select: none;
     position: sticky;

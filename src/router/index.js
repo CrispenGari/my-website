@@ -14,8 +14,9 @@ Vue.use(VueRouter);
 
 const routes = [
   { path: "/", redirect: { path: "/home" } },
-  { name: "Home", path: "/home", component: Home },
+  { path: "/admin-disabled", redirect: { path: "/home" } },
   { name: "Desktop", path: "/desktop", component: Desktop },
+  { name: "Home", path: "/home", component: Home },
   { name: "DataScience", path: "/datascience", component: DataScience },
   { name: "Web", path: "/web", component: Web },
   { name: "Mobile", path: "/mobile", component: Mobile },

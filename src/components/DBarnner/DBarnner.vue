@@ -1,5 +1,5 @@
 <template>
-  <div :class="`barner ${background}`">
+  <div :class="`barner`">
     <div class="barner__content">
       <div class="barnner__social">
         <a href="https://www.facebook.com/crispengari">
@@ -32,9 +32,6 @@
       <h1>
         Hello, Welcome to Crispen Gari's site.
       </h1>
-      <small
-        >{{ quote.title }} ― <strong>{{ quote.author }}</strong></small
-      >
       <p :style="{ color: color }">
         {{ displayName }}
       </p>
@@ -48,25 +45,7 @@ export default {
   props: {
     banner: Object,
   },
-  components: {},
-  data() {
-    return {
-      qouteIndex: 0,
-    };
-  },
-  mounted() {
-    setInterval(() => {
-      this.qouteIndex =
-        Math.round(Math.random() * 1000) % this.banner?.quotes?.length;
-    }, 5000);
-  },
   computed: {
-    background() {
-      return this.banner ? this.banner.name : "";
-    },
-    quote() {
-      return this.banner ? this.banner.quotes[this.qouteIndex] : "";
-    },
     color() {
       return this.banner ? this.banner.color : "";
     },
@@ -77,28 +56,13 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.barner.projects {
-  background: url(../../assets/images/project.jpg);
-}
-.barner.mobile {
-  background: url(../../assets/images/mobile.jpeg);
-}
-.barner.datascience {
-  background: url(../../assets/images/datascience.png);
-}
-.barner.desktop {
-  background: url(../../assets/images/desktop.jpg);
-}
-.barner.web {
-  background: url(../../assets/images/web.png);
-}
-.barner.about {
-  background: url(../../assets/images/about.gif);
-}
 .barner {
+  background-image: url(../../assets/ai.gif);
+  background-color: #1d74b7;
+  background-blend-mode: lighten;
   width: 100%;
   user-select: none !important;
-  height: 80vh;
+  height: 70vh;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -191,6 +155,7 @@ export default {
       text-align: center;
       position: relative;
       font-weight: 700;
+      left: -2000px;
     }
   }
   .barner__content > h1 {
