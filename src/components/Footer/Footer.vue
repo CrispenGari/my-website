@@ -19,7 +19,7 @@
               mdi-twitter
             </v-icon>
           </a>
-          <a href="https://www.instagram.com/crispengari/">
+          <a href="https://www.instagram.com/crispen_gari_/">
             <v-icon class="footer__social__instagram">
               mdi-instagram
             </v-icon>

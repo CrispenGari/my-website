@@ -2,6 +2,7 @@
   <div class="home">
     <Header />
     <Barner />
+    <Card />
     <h1>Technologies</h1>
     <div class="home__container">
       <NavItem
@@ -23,7 +24,7 @@
 </template>
 
 <script>
-import { Barner, NavItem, Footer, Header } from "../../components";
+import { Barner, NavItem, Footer, Header, Card } from "../../components";
 import techs from "../../utils";
 export default {
   name: "Home",
@@ -32,6 +33,7 @@ export default {
     NavItem,
     Footer,
     Header,
+    Card,
   },
   data() {
     return {
