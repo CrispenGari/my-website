@@ -1,11 +1,15 @@
 <script>
 import image from "../../assets/images/me.jpg";
+import { Code } from "../../components";
 export default {
   name: "Card",
   data() {
     return {
       image,
     };
+  },
+  components: {
+    Code,
   },
   methods: {
     navigateToAbout() {
@@ -41,6 +45,10 @@ export default {
         my own web framework using <strong>Webpack</strong>,
         <strong>Babel</strong> and <strong>TypeScript</strong>
       </p>
+      <div class="codes">
+        <Code />
+        <Code />
+      </div>
     </div>
   </div>
 </template>
@@ -66,6 +74,10 @@ export default {
     flex: 1;
     margin-left: 20px;
     user-select: none;
+    .codes {
+      display: flex;
+      align-items: flex-start;
+    }
     h1 {
       font-size: 1.2rem;
       font-weight: 500;
@@ -109,6 +121,11 @@ export default {
         border-radius: 50%;
       }
     }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .codes {
+    flex-direction: column;
   }
 }
 </style>

@@ -32,6 +32,31 @@ export default {
   props: {
     tech: Object,
   },
+  mounted() {
+    const navs = document.querySelectorAll(".naviterm");
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("naviterm--animatable");
+            return observer.unobserve(entry.target);
+          } else {
+            entry.target.classList.remove("naviterm--animatable");
+            return;
+          }
+        });
+      },
+      {
+        root: null,
+        threshold: 1,
+        rootMargin: "0px",
+      }
+    );
+
+    navs.forEach((nav) => {
+      observer.observe(nav);
+    });
+  },
 };
 </script>
 
@@ -62,12 +87,21 @@ export default {
   transition: all 2s ease;
   background: white;
 }
+
 .naviterm:nth-child(odd) {
-  animation: navitem-odd-child 2s ease-in 1s 1 alternate forwards;
+  opacity: 0.5;
 }
-.naviterm:nth-child(even) {
-  animation: navitem-even-child 2s ease-in 1s 1 alternate forwards;
+.naviterm--animatable.naviterm:nth-child(even) {
   right: -600px;
+}
+.naviterm--animatable:nth-child(odd) {
+  animation: navitem-odd-child 1s ease-in 0.5s 1 alternate forwards;
+}
+.naviterm--animatable:nth-child(even) {
+  animation: navitem-even-child 1s ease-in 0.5s 1 alternate forwards;
+}
+.naviterm:first-child {
+  opacity: 1 !important;
 }
 @keyframes navitem-even-child {
   from {
