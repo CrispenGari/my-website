@@ -57,6 +57,7 @@ export default {
 .card {
   display: flex;
   padding: 20px 50px;
+
   .card__left {
     img {
       width: 200px;
