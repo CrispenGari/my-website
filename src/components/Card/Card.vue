@@ -32,8 +32,8 @@ export default {
         and <span>Desktop Development</span>
       </h2>
       <p>
-        Interested in Open Computer Vision and Natural Language Processing. Also
-        a huge fan of Web Development with popular web frameworks such as React,
+        Interested in Computer Vision and Natural Language Processing. Also a
+        huge fan of Web Development with popular web frameworks such as React,
         Vue and Webpack. I'm currently working with <strong>TensorFlow</strong>,
         <strong>Pytorch</strong> and <strong>React Native</strong>. On my spair
         time especially weekend I contribute to my social application
@@ -115,11 +115,22 @@ export default {
 @media only screen and (max-width: 600px) {
   .card {
     padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .card__left {
       img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        border-radius: unset !important;
+        // border-radius: 50%;
+      }
+    }
+    .card__right {
+      h1 {
+        text-align: center !important
+        ;
+        width: 100%;
       }
     }
   }

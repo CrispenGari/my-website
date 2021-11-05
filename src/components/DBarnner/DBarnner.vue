@@ -31,6 +31,10 @@
 
       <h1>
         Hello, Welcome to Crispen Gari's site.
+        <span
+          >building brains from scratch using artificial neural networks
+          (ann)</span
+        >
       </h1>
       <p :style="{ color: color }">
         {{ displayName }}
@@ -62,7 +66,7 @@ export default {
   background-blend-mode: lighten;
   width: 100%;
   user-select: none !important;
-  height: 70vh;
+  height: 50vh;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -135,6 +139,12 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: center;
+      span {
+        color: cornflowerblue !important;
+        font-size: 0.7rem;
+        margin-top: 20px;
+        text-align: center;
+      }
     }
     small {
       color: white;
