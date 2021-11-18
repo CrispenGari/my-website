@@ -2,7 +2,7 @@
   <div class="barner">
     <div class="barner__content">
       <div class="barnner__social">
-        <a href="https://www.facebook.com/crispengari">
+        <a href="https://www.facebook.com/crispen.gari/">
           <v-icon class="barnner__social__facebook">
             mdi-facebook
           </v-icon>
@@ -12,12 +12,12 @@
             mdi-linkedin
           </v-icon>
         </a>
-        <a href="https://twitter.com/crispengari">
+        <a href="https://twitter.com/crispengari_">
           <v-icon class="barnner__social__twitter">
             mdi-twitter
           </v-icon>
         </a>
-        <a href="https://www.instagram.com/crispengari/">
+        <a href="https://www.instagram.com/crispen_gari_/">
           <v-icon class="barnner__social__instagram">
             mdi-instagram
           </v-icon>

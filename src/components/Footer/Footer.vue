@@ -4,7 +4,7 @@
       <div class="footer__iterm">
         <h1>Social Media</h1>
         <div class="footer__social">
-          <a href="https://www.facebook.com/crispengari">
+          <a href="https://www.facebook.com/crispen.gari">
             <v-icon class="footer__social__facebook">
               mdi-facebook
             </v-icon>
@@ -14,7 +14,7 @@
               mdi-linkedin
             </v-icon>
           </a>
-          <a href="https://twitter.com/crispengari">
+          <a href="https://twitter.com/crispengari_">
             <v-icon class="footer__social__twitter">
               mdi-twitter
             </v-icon>

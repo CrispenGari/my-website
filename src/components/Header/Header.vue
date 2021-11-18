@@ -29,6 +29,13 @@
       >
         Desktop
       </router-link>
+      <!-- <router-link
+        active-class="header__nav__active"
+        to="/"
+        class="header__nav"
+      >
+        Packages
+      </router-link> -->
       <router-link
         active-class="header__nav__active"
         to="/about"
