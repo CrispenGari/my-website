@@ -168,6 +168,7 @@ export default {
       width: 100%;
       display: flex;
       align-items: flex-start;
+      flex-direction: column;
       img {
         width: 150px;
         flex: 1;
