@@ -32,18 +32,31 @@ export default {
         and <span>Desktop Development</span>
       </h2>
       <p>
-        Interested in Computer Vision and Natural Language Processing. Also a
-        huge fan of Web Development with popular web frameworks such as React,
-        Vue and Webpack. I'm currently working with <strong>TensorFlow</strong>,
-        <strong>Pytorch</strong> and <strong>React Native</strong>. On my spair
-        time especially weekend I contribute to my social application
-        <strong>Likeme</strong>.
+        Creator of <b>initialiseur</b>, a Nodejs backend application
+        initializer. A Graphql and Artificial Intelligence enthusiast. A
+        software developer with {{ new Date().getFullYear() - 2019 }} + years of
+        coding experience. Mainly focusing with Artificial Intelligence in
+        Natural Language Processing <b>(NLP)</b>, Computer Vision
+        <b>(CV)</b> and Audio Processing <b>(AP)</b>. Good with both supervised
+        and unsupervised Machine Learning task for basic machine leaning task
+        such as regression, classification and clustering.
       </p>
+      <div>
+        <img src="/robot.jpg" alt="robotic" />
+        <p>
+          Fascinated with humanoid robotics. I've worked with successful
+          projects in Deep Leaning using modern Deep Leaning technologies. I've
+          build successfully Machine Leaning/Deep Leaning APIs using the python
+          programing language for both, Audio Processing, Natural Language
+          processing and Computer Vision.
+        </p>
+      </div>
       <p>
-        My goal is that by the end of <strong>2021</strong> I will be more
-        focusing on concurrent programing with <strong>Elixir</strong> and build
-        my own web framework using <strong>Webpack</strong>,
-        <strong>Babel</strong> and <strong>TypeScript</strong>
+        I'm also a huge fan of Full-Stack web, mobile and desktop development.
+        I've built successful projects in the field of web development using
+        modern javascript frameworks like React, Vue and Webpack. Enjoy backend
+        development using <b>TypeScript/JavaScript</b>, <b>Python</b> and
+        <b>Java</b> and working with ORM databases.
       </p>
       <div class="codes">
         <Code />
@@ -75,6 +88,16 @@ export default {
     flex: 1;
     margin-left: 20px;
     user-select: none;
+    div {
+      width: 100%;
+
+      img {
+        margin: 5px auto;
+        width: 200px;
+        -webkit-user-drag: none !important;
+        user-select: none;
+      }
+    }
     .codes {
       display: flex;
       align-items: flex-start;
@@ -138,6 +161,17 @@ export default {
 @media only screen and (max-width: 1000px) {
   .codes {
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card__right {
+    div {
+      width: 100%;
+      display: flex;
+      p {
+        margin-left: 10px;
+      }
+    }
   }
 }
 </style>
