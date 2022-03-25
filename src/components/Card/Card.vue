@@ -90,7 +90,6 @@ export default {
     user-select: none;
     div {
       width: 100%;
-
       img {
         margin: 5px auto;
         width: 200px;
@@ -168,8 +167,14 @@ export default {
     div {
       width: 100%;
       display: flex;
+      align-items: flex-start;
+      img {
+        width: 150px;
+        flex: 1;
+      }
       p {
         margin-left: 10px;
+        flex: 1;
       }
     }
   }

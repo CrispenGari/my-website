@@ -2,7 +2,7 @@
   <div class="prompt">
     <p>
       "Building <span>brains</span> from scratch using <span>Artificial</span>
-      <span>Nueral</span> <span>Networks.</span>"
+      <span>Neural</span> <span>Networks.</span>"
     </p>
   </div>
 </template>
