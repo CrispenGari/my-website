@@ -74,4 +74,64 @@ const techs = [
   },
 ];
 
+// lessons
+export const lessons = [
+  {
+    imgURL: "/ai.jpeg",
+    title: "Artificial Intelligence",
+    description: "Learn artificial intelligence using python from scratch",
+    btnTitle: "REQUEST",
+  },
+  {
+    imgURL: "/web.png",
+
+    title: "Web Development",
+    description: "Learn how to create web apps and websites from scratch.",
+    btnTitle: "REQUEST",
+  },
+  {
+    imgURL: "/mobile-apps.jpg",
+    title: "Mobile Apps",
+    description: "Learn how to create mobile apps from scratch.",
+    btnTitle: "REQUEST",
+  },
+  {
+    imgURL: "/laptop-apps.webp",
+    title: "Desktop Apps",
+    description:
+      "Learn how to create native desktop applications from scratch.",
+    btnTitle: "REQUEST",
+  },
+];
+
+export const projects = [
+  {
+    imgURL: "/ai-project.avif",
+    title: "Artificial Intelligence Project",
+    description:
+      "If you want Crispen to help you with your Artificial Intelligence project.",
+    btnTitle: "PROPOSE",
+  },
+  {
+    imgURL: "/web-dev-project.jpg",
+    title: "Web Development Project",
+    description:
+      "If you want Crispen to help you with your Web Development project.",
+    btnTitle: "PROPOSE",
+  },
+  {
+    imgURL: "/mobile-app-project.png",
+    title: "Mobile App Project",
+    description:
+      "If you want Crispen to help you with your Mobile App project.",
+    btnTitle: "PROPOSE",
+  },
+  {
+    imgURL: "/desk-dev.png",
+    title: "Desktop App Project",
+    description:
+      "If you want Crispen to help you with your Desktop App project.",
+    btnTitle: "PROPOSE",
+  },
+];
 export default techs;

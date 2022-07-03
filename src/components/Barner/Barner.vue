@@ -43,6 +43,14 @@
           Desktop Development
         </span>
       </p>
+      <h1>
+        Software Development, Tutorship, Software Consultant, Data Analysis and
+        Artificial Intelligence.
+      </h1>
+      <p>
+        Learn Step by Step from ZERO to HERO how to create/build softwares with
+        Crispen.
+      </p>
     </div>
   </div>
 </template>
@@ -63,7 +71,7 @@ export default {
   background-color: #1d74b7;
   background-blend-mode: lighten;
   width: 100%;
-  height: 50vh;
+  height: 55vh;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -131,6 +139,9 @@ export default {
         margin-top: 20px;
         text-align: center;
       }
+    }
+    p {
+      color: cornflowerblue !important;
     }
     small {
       color: white;

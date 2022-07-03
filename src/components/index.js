@@ -11,3 +11,4 @@ export { default as Card } from "./Card/Card";
 export { default as Code } from "./Code/Code";
 export { default as Prompt } from "./Prompt/Prompt";
 export { default as Bar } from "./Bar/Bar";
+export { default as HomeCard } from "./HomeCard/HomeCard";

@@ -5,7 +5,8 @@
     <Prompt />
     <Card />
     <Bar />
-    <h1>Technologies</h1>
+
+    <h1>Crispen's Technology Stack</h1>
     <div class="home__container">
       <NavItem
         v-for="tech in techs.filter((tech) => tech.id === 1)"
@@ -21,6 +22,22 @@
       </div>
     </div>
 
+    <h1>You want Tutorship Services?</h1>
+    <div class="home__container">
+      <HomeCard
+        v-for="(lesson, i) of lessons"
+        :data="lesson"
+        :key="i.toString()"
+      />
+    </div>
+    <h1>You want to propose for a new Project?</h1>
+    <div class="home__container">
+      <HomeCard
+        v-for="(project, i) of projects"
+        :data="project"
+        :key="i.toString()"
+      />
+    </div>
     <Footer />
   </div>
 </template>
@@ -34,8 +51,9 @@ import {
   Card,
   Prompt,
   Bar,
+  HomeCard,
 } from "../../components";
-import techs from "../../utils";
+import techs, { lessons, projects } from "../../utils";
 export default {
   name: "Home",
   components: {
@@ -46,10 +64,13 @@ export default {
     Card,
     Prompt,
     Bar,
+    HomeCard,
   },
   data() {
     return {
       techs,
+      lessons,
+      projects,
     };
   },
 };

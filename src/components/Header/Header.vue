@@ -3,39 +3,13 @@
     <div class="header__content__navs">
       <router-link
         active-class="header__nav__active"
-        to="/datascience"
+        to="/home"
         class="header__nav"
       >
-        Data Science
+        Home
       </router-link>
-      <router-link
-        active-class="header__nav__active"
-        to="/web"
-        class="header__nav"
-      >
-        Web
-      </router-link>
-      <router-link
-        active-class="header__nav__active"
-        to="/mobile"
-        class="header__nav"
-      >
-        Mobile
-      </router-link>
-      <router-link
-        active-class="header__nav__active"
-        to="/desktop"
-        class="header__nav"
-      >
-        Desktop
-      </router-link>
-      <!-- <router-link
-        active-class="header__nav__active"
-        to="/"
-        class="header__nav"
-      >
-        Packages
-      </router-link> -->
+    </div>
+    <div class="header__navs__left">
       <router-link
         active-class="header__nav__active"
         to="/about"
@@ -49,22 +23,6 @@
         class="header__nav"
       >
         Projects
-      </router-link>
-    </div>
-    <div class="header__navs__left">
-      <router-link
-        active-class="header__nav__active"
-        to="/home"
-        class="header__nav"
-      >
-        Home
-      </router-link>
-      <router-link
-        active-class="header__nav__active"
-        to="/admin-disabled"
-        class="header__nav"
-      >
-        Admin
       </router-link>
     </div>
   </div>

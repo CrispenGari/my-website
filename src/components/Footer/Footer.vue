@@ -33,7 +33,15 @@
       </div>
       <div class="footer__iterm">
         <h1>Contacts</h1>
-        <p><span>Phone</span><span>+27 652 305 879</span></p>
+        <div>
+          <span>Phone</span>
+          <p>
+            <span>+27 652 305 879</span>
+            <!-- <span>+27 652 305 879</span>
+            <span>+27 652 305 879</span>
+            <span>+27 652 305 879</span> -->
+          </p>
+        </div>
         <p><span>Email</span><span>Crispengari@gmail.com</span></p>
       </div>
     </div>
@@ -76,13 +84,24 @@ export default {
         user-select: none;
         text-transform: uppercase;
       }
-      p {
+      p,
+      div {
         display: flex;
         width: 100%;
         justify-content: space-between;
         color: white;
         span {
           color: white;
+          user-select: none;
+        }
+        p {
+          display: flex;
+          flex-direction: column;
+          span {
+            color: cornflowerblue;
+            user-select: all;
+            align-self: flex-end;
+          }
         }
       }
       .footer__social {
@@ -141,6 +160,7 @@ export default {
   .footer__iterm > p > span:last-child {
     color: #0073b1 !important;
     cursor: pointer;
+    user-select: all;
   }
 }
 </style>

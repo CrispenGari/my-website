@@ -1,12 +1,7 @@
 <template>
   <div class="naviterm">
-    <router-link
-      :to="tech.path"
-      class="naviterm__link"
-      :style="{ color: tech.color }"
-    >
+    <router-link to="/" class="naviterm__link" :style="{ color: tech.color }">
       {{ tech.name }}
-
       <v-icon :style="{ color: tech.iconColor }">
         {{ tech.icon }}
       </v-icon>
