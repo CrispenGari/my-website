@@ -4,11 +4,30 @@
     <div class="email__main">
       <form @submit.prevent="sendEmail">
         <h1>Send us an Email.</h1>
+        <div class="email__loader" v-if="loading">
+          <div />
+        </div>
         <input type="text" v-model="title" placeholder="subject" />
+        <div>
+          <input
+            type="text"
+            placeholder="your first name(s)"
+            v-model="firstName"
+          />
+          <input type="text" placeholder="your last name" v-model="lastName" />
+        </div>
         <textarea v-model="body" placeholder="type your message"></textarea>
         <input type="email" v-model="sender" placeholder="your email address" />
-        <p :class="error ? 'email__message--error' : 'email__message'">
+        <input
+          type="tel"
+          v-model="phoneNumber"
+          placeholder="your phone number"
+        />
+        <p v-if="error" :class="error ? 'email__message--error' : ''">
           {{ error }}
+        </p>
+        <p v-if="message" :class="message ? 'email__message' : ''">
+          {{ message }}
         </p>
         <button type="submit">SEND</button>
       </form>
@@ -31,30 +50,90 @@ export default {
       body: "",
       sender: "",
       error: "",
+      firstName: "",
+      lastName: "",
+      phoneNumber: "",
+      message: "",
+      loading: false,
     };
   },
   methods: {
     sendEmail() {
+      this.loading = true;
       if (this.title == "") {
+        this.message = "";
         this.error = "Email subject is required.";
+        this.loading = false;
         return;
       }
-      if (this.body.length < 30) {
-        this.error = "The email body must have at least 30 characters.";
+      if (this.firstName == "") {
+        this.loading = false;
+        this.message = "";
+        this.error = "First Name(s) is required.";
+        return;
+      }
+      if (this.lastName == "") {
+        this.message = "";
+        this.error = "Last Name is required.";
+        this.loading = false;
+        return;
+      }
+      if (this.body.length < 10) {
+        this.message = "";
+        this.loading = false;
+        this.error = "The email body must have at least 10 characters.";
         return;
       }
       if (this.sender == "") {
+        this.loading = false;
+        this.message = "";
         this.error = "Please enter your email address.";
         return;
       }
+
+      if (this.phoneNumber == "") {
+        this.message = "";
+        this.loading = false;
+        this.error = "Your Phone Number is required.";
+        return;
+      }
+      this.message = "";
       this.error = "";
-      console.log({
-        title: this.title,
-        body: this.body,
-        sender: this.sender,
-        error: this.error,
-      });
-      //   this.$router.push("/");
+
+      (async () => {
+        this.loading = true;
+        await fetch("https://crispen-backend.herokuapp.com/api/v1/send-email", {
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            subject: this.title,
+            body: this.body,
+            from: this.sender,
+            firstName: this.firstName,
+            lastName: this.lastName,
+            phoneNumber: this.phoneNumber,
+          }),
+
+          method: "POST",
+        })
+          .then((res) => res.json())
+          .then((d) => {
+            this.loading = false;
+            if (d.code == 500) {
+              this.message = "";
+              this.error = d.message;
+            } else {
+              this.error = "";
+              this.message = d.message;
+            }
+          })
+          .catch((error) => {
+            this.loading = false;
+            this.error = error.message;
+          });
+      })();
     },
   },
 };
@@ -76,6 +155,30 @@ export default {
       width: 100%;
       max-width: 400px;
       margin: auto;
+      position: relative;
+      .email__loader {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        right: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 100;
+        div {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: 3px solid lightgray;
+          border-top: 3px solid #42b983;
+          border-right: 3px solid cornflowerblue;
+          animation: loading 1s ease 0s infinite;
+        }
+      }
       h1 {
         width: 100%;
         padding: 10px;
@@ -89,13 +192,28 @@ export default {
         z-index: 10;
         background: white;
       }
+      div {
+        width: 100%;
+        display: flex;
+        margin: 5px auto;
+      }
       input,
-      textarea {
+      textarea,
+      div > input {
         border: 1px solid cornflowerblue;
         outline: none;
         padding: 5px;
         resize: none;
         border-radius: 5px;
+      }
+      div > input {
+        flex: 1;
+      }
+      div > input:first-of-type {
+        margin-right: 5px;
+      }
+      input:last-of-type {
+        margin-top: 5px;
       }
       textarea {
         margin: 10px 0;
@@ -117,13 +235,28 @@ export default {
       .email__message--error {
         margin: 10px auto;
         user-select: none;
-        color: #42b983;
+        background-color: #42b983;
+        width: 100%;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        text-align: center;
       }
       .email__message--error {
-        color: red;
-        font-style: italic;
+        background-color: red;
+      }
+      .email__message {
       }
     }
+  }
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 </style>
