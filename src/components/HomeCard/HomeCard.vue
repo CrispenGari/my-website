@@ -3,6 +3,11 @@
     <img :src="data.imgURL" alt="home-card" />
     <h1>{{ data.title }}</h1>
     <p>{{ data.description }}</p>
+    <div class="home__card__prices">
+      <h3 v-if="data.previousPrice">R {{ data.previousPrice }} p/w</h3>
+      <h2 v-if="data.currentPrice">R {{ data.currentPrice }} p/w</h2>
+    </div>
+
     <button
       @click="navigateToEmail"
       :class="
@@ -44,6 +49,21 @@ export default {
   margin: 10px;
   cursor: pointer;
   transition: all 1s;
+  .home__card__prices {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    h2 {
+      font-size: 1rem !important;
+    }
+    h3 {
+      text-decoration: line-through red;
+      color: gray;
+      font-size: 0.7rem !important
+    ;
+    }
+  }
+
   button {
     color: white;
     cursor: pointer;
