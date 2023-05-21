@@ -11,7 +11,7 @@
   "scripts": {
     "watch": "tsc -w",
     "start": "node dist/server.js",
-    "build": "tsc",
+    "build": "npx tsc",
     "postinstall": "yarn run build",
     "dev": "nodemon dist/server.js"
   },
