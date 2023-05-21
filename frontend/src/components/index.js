@@ -1,0 +1,16 @@
+export { default as Barner } from "./Barner/Barner";
+export { default as NavItem } from "./NavItem/NavItem";
+export { default as Footer } from "./Footer/Footer";
+export { default as DBarnner } from "./DBarnner/DBarnner";
+export { default as AboutContent } from "./AboutContent/AboutContent";
+export { default as Tech } from "./Tech/Tech";
+export { default as Nav } from "./Nav/Nav";
+export { default as Form } from "./Form/Form";
+export { default as Header } from "./Header/Header";
+export { default as Card } from "./Card/Card";
+export { default as Code } from "./Code/Code";
+export { default as Prompt } from "./Prompt/Prompt";
+export { default as BarView } from "./Bar/Bar";
+export { default as HomeCard } from "./HomeCard/HomeCard";
+export { default as CookiePolicy } from "./CookiePolicy/CookiePolicy";
+export { default as ProjectCard } from "./ProjectCard/ProjectCard";

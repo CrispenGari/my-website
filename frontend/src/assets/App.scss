@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Trirong);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333;
+  font-family: "Trirong", serif;
+  user-zoom: none;
+}
+body {
+  background: white;
+}
+::-webkit-scrollbar {
+  display: none;
+}

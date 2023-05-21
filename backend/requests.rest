@@ -1,0 +1,42 @@
+###
+
+GET http://localhost:3001/api/v1/visitors
+
+###
+GET http://localhost:3001/
+
+### Creating a new Project
+POST https://crispengari-server.onrender.com/api/v1/project/add
+content-type: application/json
+
+{
+  "name": "HSP",
+  "description": "🎏😣😪 Human Stress Prediction(HSP)  is an AI REST API that accurately detect stress from texual data and detemine what context does this stress belongs to.",
+  "longDescription": "🎏😣😪 Human Stress Prediction(HSP) is an Artificial Intelligence(AI) REST API build with python flask and pytorch that detect stress in human text and also detect what kind of stress in in these text.",
+  "url": "https://github.com/CrispenGari/human-stress-prediction",
+  "cover":"/covers/hsp.jpg",
+  "languages": [ "Python"],
+  "projectType":"Web Development",
+  "year": 2023
+}
+
+
+### Getting Projects
+
+GET https://crispengari-server.onrender.com/api/v1/projects
+
+
+### Getting a project
+GET http://localhost:3001/api/v1/project/62e53e8298301c5addb444c1
+
+### Getting a project
+DELETE http://localhost:3001/api/v1/project/62e64feca46683e420b4b15e
+
+### Updating a project
+
+PUT https://crispengari-server.onrender.com/api/v1/project/63a46c7b2f91658019bcfce8
+content-type: application/json
+
+{
+   "cover": "/covers/restaurant.jpg",
+}
