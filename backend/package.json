@@ -11,7 +11,7 @@
   "scripts": {
     "watch": "tsc -w",
     "start": "node dist/server.js",
-    "build": "tsc",
+    "build": "npx tsc",
     "postinstall": "yarn run build",
     "dev": "nodemon dist/server.js"
   },
@@ -28,8 +28,7 @@
     "nodemailer": "^6.7.6",
     "nodemailer-juice": "^1.0.1",
     "ts-node": "^10.2.0",
-    "ts-node-dev": "^1.1.8",
-    "typescript": "^4.3.5"
+    "ts-node-dev": "^1.1.8"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
@@ -40,6 +39,7 @@
     "@types/express-session": "^1.17.5",
     "@types/node": "^16.6.1",
     "@types/nodemailer": "^6.4.4",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "typescript": "^5.0.4"
   }
 }
