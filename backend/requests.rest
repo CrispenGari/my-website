@@ -6,24 +6,24 @@ GET http://localhost:3001/api/v1/visitors
 GET http://localhost:3001/
 
 ### Creating a new Project
-POST https://crispengari-server.onrender.com/api/v1/project/add
+POST https://crispengari.onrender.com/api/v1/project/add
 content-type: application/json
 
 {
-  "name": "HSP",
-  "description": "🎏😣😪 Human Stress Prediction(HSP)  is an AI REST API that accurately detect stress from texual data and detemine what context does this stress belongs to.",
-  "longDescription": "🎏😣😪 Human Stress Prediction(HSP) is an Artificial Intelligence(AI) REST API build with python flask and pytorch that detect stress in human text and also detect what kind of stress in in these text.",
-  "url": "https://github.com/CrispenGari/human-stress-prediction",
-  "cover":"/covers/hsp.jpg",
-  "languages": [ "Python"],
-  "projectType":"Web Development",
+  "name": "cookron",
+  "description": "👩‍🍳🔪 cookron is a mobile application that you can explore recipes from different Chef and learn how to cook certain recipes.",
+  "longDescription":  "👩‍🍳🔪 cooking made easy with Cookron mobile app. Explore recipes from different Chefs using our app and improve your cooking skills to satisfy all.",
+  "url": "https://github.com/CrispenGari/cookron",
+  "cover":"/covers/cookron.png",
+  "languages": [ "Python", "TypeScript"],
+  "projectType":"Mobile Development",
   "year": 2023
 }
 
 
 ### Getting Projects
 
-GET https://crispengari-server.onrender.com/api/v1/projects
+GET https://crispengari.onrender.com/api/v1/projects
 
 
 ### Getting a project
@@ -34,7 +34,7 @@ DELETE http://localhost:3001/api/v1/project/62e64feca46683e420b4b15e
 
 ### Updating a project
 
-PUT https://crispengari-server.onrender.com/api/v1/project/63a46c7b2f91658019bcfce8
+PUT https://crispengari.onrender.com/api/v1/project/63a46c7b2f91658019bcfce8
 content-type: application/json
 
 {
