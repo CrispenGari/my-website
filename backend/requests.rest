@@ -10,13 +10,13 @@ POST https://crispengari.onrender.com/api/v1/project/add
 content-type: application/json
 
 {
-  "name": "cookron",
-  "description": "👩‍🍳🔪 cookron is a mobile application that you can explore recipes from different Chef and learn how to cook certain recipes.",
-  "longDescription":  "👩‍🍳🔪 cooking made easy with Cookron mobile app. Explore recipes from different Chefs using our app and improve your cooking skills to satisfy all.",
-  "url": "https://github.com/CrispenGari/cookron",
-  "cover":"/covers/cookron.png",
-  "languages": [ "Python", "TypeScript"],
-  "projectType":"Mobile Development",
+  "name": "dfmaster",
+  "description": "👾 This is a simple vscode extension that reads cvs, tsv, etc file into a dataframe table.",
+  "longDescription":  "This is the Visual Studio Code extension that converts data for files with extensions tsv, json and csv into DataFrame tables.",
+  "url": "https://github.com/CrispenGari/dfmaster",
+  "cover":"/covers/dfmaster.png",
+  "languages": ["TypeScript"],
+  "projectType":"Web Development",
   "year": 2023
 }
 

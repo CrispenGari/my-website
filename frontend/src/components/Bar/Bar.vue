@@ -71,10 +71,10 @@ export default {
   data() {
     return {
       chartData: {
-        labels: ["Typescript", "JavaScript", "Python", "Java", "C++"],
+        labels: ["TypeScript", "JavaScript", "Python", "Java", "C++"],
         datasets: [
           {
-            data: [35, 10, 40, 10, 5],
+            data: [45, 15, 30, 7, 3],
             backgroundColor: [
               "cornflowerblue",
               "cornflowerblue",
