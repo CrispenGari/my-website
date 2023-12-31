@@ -81,7 +81,7 @@ export const lessons = [
     title: "Artificial Intelligence",
     description: "Learn artificial intelligence using python from scratch",
     btnTitle: "REQUEST",
-    currentPrice: 224.99,
+    currentPrice: 199.99,
     previousPrice: 249.99,
   },
   {
@@ -90,7 +90,7 @@ export const lessons = [
     title: "Web Development",
     description: "Learn how to create web apps and websites from scratch.",
     btnTitle: "REQUEST",
-    currentPrice: 224.99,
+    currentPrice: 199.99,
     previousPrice: 249.99,
   },
   {
@@ -98,7 +98,7 @@ export const lessons = [
     title: "Mobile Apps",
     description: "Learn how to create mobile apps from scratch.",
     btnTitle: "REQUEST",
-    currentPrice: 224.99,
+    currentPrice: 199.99,
     previousPrice: 249.99,
   },
   {
@@ -107,7 +107,7 @@ export const lessons = [
     description:
       "Learn how to create native desktop applications from scratch.",
     btnTitle: "REQUEST",
-    currentPrice: 224.99,
+    currentPrice: 199.99,
     previousPrice: 249.99,
   },
 ];
