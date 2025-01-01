@@ -33,38 +33,48 @@ export default {
     <div class="card__right">
       <h1 @click="navigateToAbout">Tinashe Crispen Garidzira</h1>
       <h2>
-        <span>Artificial Inteligence</span>,<span> Web Development</span>,<span>
-          Mobile Development</span
-        >
-        and <span>Desktop Development</span>
+        <span>Researcher</span>, <span>Artificial Intelligence</span>,<span>
+          Web Development</span
+        >,<span> Mobile Development</span> and <span>Desktop Development</span>
       </h2>
       <p>
-        Creator of <b>initialiseur</b>, a Nodejs backend application
-        initializer. A Graphql and Artificial Intelligence enthusiast. A
-        software developer with {{ new Date().getFullYear() - 2019 }} + years of
-        coding experience. Mainly focusing with Artificial Intelligence in
-        Natural Language Processing <b>(NLP)</b>, Computer Vision
-        <b>(CV)</b> and Audio Processing <b>(AP)</b>. Good with both supervised
-        and unsupervised Machine Learning task for basic machine leaning task
-        such as regression, classification and clustering.
+        Tinashe Crispen Garidzira, aka Crispen Gari, is a software developer and
+        AI researcher specializing in machine learning and deep learning. He is
+        the creator of <b>dataloom.py</b> and <b>helperfns</b>, tools designed
+        for developers and Software Developers and AI practitioners. With
+        {{ new Date().getFullYear() - 2019 }}+ years of coding experience, he
+        focuses on Artificial Intelligence in Natural Language Processing
+        (<b>NLP</b>), Computer Vision (<b>CV</b>), and Audio Processing
+        (<b>AP</b>). Tinashe has published significant work in the fields of
+        deep learning and software development. He enjoys working with React
+        Native, React.js, and TypeScript, building frameworks, and tutoring
+        students online. His technical expertise includes Python,
+        TypeScript/JavaScript, C++, and Java. A fan of PyTorch and Expo, he
+        excels in supervised tasks like classification and regression, as well
+        as unsupervised and semi-supervised machine learning. He also leverages
+        datasets from Kaggle and Hugging Face to develop innovative machine
+        learning models.
       </p>
       <div>
         <img src="/robot.jpg" alt="robotic" />
         <p>
-          Fascinated with humanoid robotics. I've worked with successful
-          projects in Deep Leaning using modern Deep Leaning technologies. I've
-          build successfully Machine Leaning/Deep Leaning APIs using the python
-          programing language for both, Audio Processing, Natural Language
-          processing and Computer Vision.
+          Fascinated by humanoid robotics, I have successfully worked on
+          projects leveraging modern deep learning technologies. I have built
+          robust machine learning and deep learning APIs using Python for
+          applications in audio processing, natural language processing, and
+          computer vision.
         </p>
       </div>
       <p>
-        I'm also a huge fan of Full-Stack web, mobile and desktop development.
-        I've built successful projects in the field of web development using
-        modern javascript frameworks like React, Vue and Webpack. Enjoy backend
-        development using <b>TypeScript/JavaScript</b>, <b>Python</b> and
-        <b>Java</b> and working with ORM databases.
+        I am a passionate Full-Stack developer with expertise in web, mobile,
+        and desktop development. I have successfully built projects using modern
+        JavaScript frameworks like React, Vue, and Webpack. I enjoy backend
+        development with <b>TypeScript/JavaScript</b>, <b>Python</b>, and
+        <b>Java</b>, as well as working with ORM databases. Additionally, I
+        created an Object Relational Mapping (ORM) library for Python called
+        <b>dataloom</b>.
       </p>
+
       <BarView />
       <div class="codes">
         <Code />

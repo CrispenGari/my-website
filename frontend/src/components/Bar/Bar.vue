@@ -74,13 +74,13 @@ export default {
         labels: ["TypeScript", "JavaScript", "Python", "Java", "C++"],
         datasets: [
           {
-            data: [45, 15, 30, 7, 3],
+            data: [40, 15, 35, 7, 3],
             backgroundColor: [
-              "cornflowerblue",
-              "cornflowerblue",
-              "cornflowerblue",
-              "cornflowerblue",
-              "cornflowerblue",
+              "#074799",
+              "#FFD65A",
+              "#4DA1A9",
+              "#5CB338",
+              "#4C585B",
             ],
           },
         ],

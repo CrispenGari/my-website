@@ -2,30 +2,29 @@
   <div class="barner">
     <div class="barner__content">
       <div class="barnner__social">
-        <a href="https://www.facebook.com/crispen.gari/">
-          <v-icon class="barnner__social__facebook">
-            mdi-facebook
-          </v-icon>
+        <a href="https://www.facebook.com/crispen.gari/" target="blank_">
+          <i class="pi pi-facebook barnner__social__facebook"></i>
         </a>
-        <a href="https://www.linkedin.com/in/crispen-gari-34437720b/">
-          <v-icon class="barnner__social__linkedin">
-            mdi-linkedin
-          </v-icon>
+        <a
+          target="blank_"
+          href="https://www.linkedin.com/in/tinashe-crispen-garidzira-34437720b/"
+        >
+          <i class="pi pi-linkedin barnner__social__linkedin"></i>
         </a>
-        <a href="https://twitter.com/crispengari_">
-          <v-icon class="barnner__social__twitter">
-            mdi-twitter
-          </v-icon>
+        <a target="blank_" href="https://x.com/crispengari_">
+          <i class="pi pi-twitter barnner__social__x"></i>
         </a>
-        <a href="https://www.instagram.com/crispen_gari_/">
-          <v-icon class="barnner__social__instagram">
-            mdi-instagram
-          </v-icon>
+        <a target="blank_" href="https://www.instagram.com/crispen_gari_/">
+          <i class="pi pi-instagram barnner__social__instagram"></i>
         </a>
-        <a href="https://github.com/CrispenGari">
-          <v-icon class="barnner__social__github">
-            mdi-github
-          </v-icon>
+        <a target="blank_" href="https://github.com/CrispenGari">
+          <i class="pi pi-github barnner__social__github"></i>
+        </a>
+        <a
+          target="blank_"
+          href="https://scholar.google.com/citations?user=NlqEWgUAAAAJ"
+        >
+          <i class="pi pi-graduation-cap barnner__social__scholar"></i>
         </a>
       </div>
 
@@ -39,21 +38,21 @@
       <p>
         <span> Data Science, </span><span> Web Development, </span
         ><span> Mobile Development</span> <span>and</span
-        ><span>
-          Desktop Development
-        </span>
+        ><span> Desktop Development </span>
       </p>
       <h1>
-        Software Development, Tutorship, Software Consultant, Data Analysis and
-        Artificial Intelligence.
+        Research, Software Development, Tutorship, Software Consultant, Data
+        Analysis and Artificial Intelligence.
       </h1>
       <p>
-        Learn Step by Step from ZERO to HERO how to create/build softwares with
-        Crispen.
+        Building Softwares with Human Intelligence using Artificial Neural
+        Networks.
       </p>
     </div>
     <div class="barner__visitors">
-      <h1>{{ visitors }} visitor(s)</h1>
+      <h1>
+        <i class="pi pi-eye barner__visitors__eye"></i>{{ visitors }} visitor(s)
+      </h1>
     </div>
   </div>
 </template>
@@ -102,9 +101,16 @@ export default {
     right: 0;
     z-index: 100;
     background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 5px;
     h1 {
       color: white;
       font-weight: 500;
+    }
+    .barner__visitors__eye {
+      color: white;
+      margin-right: 8px;
     }
   }
   .barnner__social {
@@ -114,6 +120,7 @@ export default {
     z-index: 10;
     display: flex;
     align-items: center;
+    gap: 5px;
     a {
       text-decoration: none !important;
       margin: 5px;
@@ -121,27 +128,32 @@ export default {
     .barnner__social__facebook {
       color: #2ba5da;
       cursor: pointer;
-      font-size: 30px;
+      font-size: 1.2rem;
     }
-    .barnner__social__twitter {
-      color: #2ba5da;
+    .barnner__social__x {
+      color: white;
       cursor: pointer;
-      font-size: 30px;
+      font-size: 1.2rem;
     }
     .barnner__social__linkedin {
       color: #0073b1;
       cursor: pointer;
-      font-size: 30px;
+      font-size: 1.2rem;
     }
     .barnner__social__instagram {
       color: #dd0f26;
       cursor: pointer;
-      font-size: 30px;
+      font-size: 1.2rem;
     }
     .barnner__social__github {
       color: white;
       cursor: pointer;
-      font-size: 30px;
+      font-size: 1.2rem;
+    }
+    .barnner__social__scholar {
+      color: #5c95f4;
+      cursor: pointer;
+      font-size: 1.2rem;
     }
   }
   .barner__content {

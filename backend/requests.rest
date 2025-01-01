@@ -2,22 +2,26 @@
 
 GET http://localhost:3001/api/v1/visitors
 
+
+
 ###
 GET http://localhost:3001/
+
+
 
 ### Creating a new Project
 POST https://crispengari.onrender.com/api/v1/project/add
 content-type: application/json
 
 {
-  "name": "dfmaster",
-  "description": "👾 This is a simple vscode extension that reads cvs, tsv, etc file into a dataframe table.",
-  "longDescription":  "This is the Visual Studio Code extension that converts data for files with extensions tsv, json and csv into DataFrame tables.",
-  "url": "https://github.com/CrispenGari/dfmaster",
-  "cover":"/covers/dfmaster.png",
-  "languages": ["TypeScript"],
-  "projectType":"Web Development",
-  "year": 2023
+  "name": "ai-detector",
+  "description": "🤖 Detecting AI generated text in real time using Deep-Leaning.",
+  "longDescription":  "🤖 Detecting AI generated text in real time using Deep-Leaning. This repository contain a GraphQL Server served to a Next.js application to detect AI generated text.",
+  "url": "https://github.com/CrispenGari/ai-detector.git",
+  "cover":"/covers/ai-detector.png",
+  "languages": ["TypeScript", "Python"],
+  "projectType":"Artificial Intelligence",
+  "year": 2024
 }
 
 
