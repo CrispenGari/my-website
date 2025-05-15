@@ -98,7 +98,18 @@ const Email: React.FC<Props> = () => {
         setState({ ...state, message: "", error: data.message });
         return;
       }
-      setState((s) => ({ ...s, message: "The email was sent successfully." }));
+      setState((s) => ({
+        ...s,
+        message: "The email was sent successfully.",
+        firstName: "",
+        lastName: "",
+        body: "",
+        sender: "",
+        phoneNumber: "",
+        loading: false,
+        error: "",
+        subject: "",
+      }));
     } catch (err) {
       setState((s) => ({ ...s, error: "Couldn't send the email try again." }));
     } finally {
