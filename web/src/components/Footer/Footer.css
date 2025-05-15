@@ -1,0 +1,132 @@
+.footer {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 10px 10px 20px 10px;
+}
+
+.footer__container {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.footer__iterm {
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  max-width: 300px;
+}
+
+.footer__iterm > h1 {
+  color: white;
+  width: 100%;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 5px 0;
+  border-bottom: 1px solid lightgray;
+  user-select: none;
+  text-transform: uppercase;
+}
+
+.footer__iterm > p,
+.footer__iterm > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+}
+
+.footer__iterm > p > span,
+.footer__iterm > div span {
+  color: white;
+  user-select: none;
+}
+
+.footer__iterm > p > p {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__iterm > p > p span {
+  color: cornflowerblue;
+  user-select: all;
+  align-self: flex-end;
+}
+
+.footer__social {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  gap: 5px;
+}
+
+.footer__social > a {
+  text-decoration: none !important;
+  margin: 5px;
+}
+
+.footer__social__facebook {
+  color: #2ba5da !important;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.footer__social__linkedin {
+  color: #0073b1 !important;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.footer__social__instagram {
+  color: #dd0f26 !important;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.footer__social__github {
+  color: white !important;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.footer__social__x {
+  color: white !important;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.footer__social__scholar {
+  color: #5c95f4 !important;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.footer > p {
+  color: white !important;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 20px;
+  user-select: none;
+}
+
+.footer p strong {
+  color: white;
+  letter-spacing: 1px;
+}
+
+.footer__iterm > p > span:first-child {
+  color: white;
+  user-select: all !important;
+}
+
+.footer__iterm > p > span:last-child {
+  color: #0073b1 !important;
+  cursor: pointer;
+  user-select: all !important;
+}
+
+.footer__iterm > div span {
+  user-select: all !important;
+}

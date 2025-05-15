@@ -1,0 +1,23 @@
+.about h1 {
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  user-select: none;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.about .about__container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.about .about__container__right {
+  display: flex;
+  flex-direction: column;
+}

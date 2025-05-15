@@ -1,0 +1,60 @@
+.page__not__found {
+  user-select: none;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page__not__found .page__not__found__name {
+  margin: 20px 0;
+  color: #42b983;
+  font-weight: 700;
+}
+
+.page__not__found img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  -webkit-user-drag: none;
+  margin-bottom: 10px;
+}
+
+.page__not__found h1 span {
+  font-size: 3rem !important;
+}
+
+.page__not__found h1 span:last-of-type {
+  color: #42b983;
+}
+
+.page__not__found h1 span:nth-child(2) {
+  top: -50px;
+  position: relative;
+  color: cornflowerblue;
+  animation: bounce 1s ease 0s infinite alternate forwards;
+}
+
+.page__not__found a {
+  margin: 0px 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+@keyframes bounce {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .page__not__found img {
+    width: 150px;
+    height: 150px;
+  }
+}

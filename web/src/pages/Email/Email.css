@@ -1,0 +1,130 @@
+.email .email__main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 60vh;
+}
+
+.email .email__main form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  position: relative;
+}
+
+.email .email__main form .email__loader {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.email .email__main form .email__loader div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid lightgray;
+  border-top: 3px solid #42b983;
+  border-right: 3px solid cornflowerblue;
+  animation: loading 1s ease 0s infinite;
+}
+
+.email .email__main form h1 {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  user-select: none;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: white;
+}
+
+.email .email__main form div {
+  width: 100%;
+  display: flex;
+  margin: 5px auto;
+}
+
+.email .email__main form input,
+.email .email__main form textarea,
+.email .email__main form div > input {
+  border: 1px solid cornflowerblue;
+  outline: none;
+  padding: 5px;
+  resize: none;
+  border-radius: 5px;
+}
+
+.email .email__main form div > input {
+  flex: 1;
+}
+
+.email .email__main form div > input:first-of-type {
+  margin-right: 5px;
+}
+
+.email .email__main form input:last-of-type {
+  margin-top: 5px;
+}
+
+.email .email__main form textarea {
+  margin: 10px 0;
+  height: 200px;
+}
+
+.email .email__main form button {
+  margin: 10px auto;
+  padding: 5px;
+  background: cornflowerblue;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.email .email__main form button:hover {
+  background: #42b983;
+}
+
+.email .email__main form .email__message,
+.email .email__main form .email__message--error {
+  margin: 10px auto;
+  user-select: none;
+  background-color: #42b983;
+  width: 100%;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.email .email__main form .email__message--error {
+  background-color: red;
+}
+
+/* animation */
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

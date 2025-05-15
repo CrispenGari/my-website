@@ -1,0 +1,57 @@
+.naviterm {
+  width: 100%;
+  padding: 10px;
+  max-width: 500px;
+  margin: 10px;
+  position: relative;
+  text-decoration: none !important;
+  user-select: none;
+
+  transition: all 2s ease;
+  background: white;
+}
+
+.naviterm__link {
+  padding: 10px 0;
+  cursor: pointer;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+  text-decoration: none;
+  font-weight: 500;
+}
+.naviterm p {
+  padding-top: 40px;
+}
+.naviterm:nth-child(odd) {
+  opacity: 0.5;
+}
+.naviterm--animatable.naviterm:nth-child(even) {
+  right: -600px;
+}
+.naviterm--animatable:nth-child(odd) {
+  animation: navitem-odd-child 1s ease-in 0.5s 1 alternate forwards;
+}
+.naviterm--animatable:nth-child(even) {
+  animation: navitem-even-child 1s ease-in 0.5s 1 alternate forwards;
+}
+.naviterm:first-child {
+  opacity: 1 !important;
+}
+@keyframes navitem-even-child {
+  from {
+    right: -600px;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes navitem-odd-child {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}

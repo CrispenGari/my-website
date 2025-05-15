@@ -12,7 +12,6 @@ const banners = [
   {
     name: "mobile",
     displayName: "Mobile Development",
-
     color: "#8731d2",
   },
   {

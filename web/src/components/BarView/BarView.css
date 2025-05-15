@@ -1,0 +1,12 @@
+.bar {
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bar > h2 {
+  color: #333333 !important;
+}
