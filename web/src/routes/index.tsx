@@ -9,7 +9,7 @@ const Routes: React.FC<Props> = () => {
         <Route path="/" caseSensitive element={<Home />} />
         <Route path="/projects" caseSensitive element={<Projects />} />
         <Route path="/about" caseSensitive element={<About />} />
-        <Route path="/email-him" caseSensitive element={<Email />} />
+        <Route path="/email/:subject" caseSensitive element={<Email />} />
         <Route path="*" element={<PageNotFound />} caseSensitive />
       </R>
     </Router>

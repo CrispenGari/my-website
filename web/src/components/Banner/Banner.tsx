@@ -19,42 +19,42 @@ const Banner: React.FC<Props> = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebook className="footer__social__facebook" />
+            <FaFacebook className="banner__social__facebook" />
           </a>
           <a
             href="https://www.linkedin.com/in/tinashe-crispen-garidzira-34437720b/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin className="footer__social__linkedin" />
+            <FaLinkedin className="banner__social__linkedin" />
           </a>
           <a
             href="https://x.com/crispengari_"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTwitter className="footer__social__x" />
+            <FaTwitter className="banner__social__x" />
           </a>
           <a
             href="https://www.instagram.com/crispen_gari_/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaInstagram className="footer__social__instagram" />
+            <FaInstagram className="banner__social__instagram" />
           </a>
           <a
             href="https://github.com/CrispenGari"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub className="footer__social__github" />
+            <FaGithub className="banner__social__github" />
           </a>
           <a
             href="https://scholar.google.com/citations?user=NlqEWgUAAAAJ"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGraduationCap className="footer__social__scholar" />
+            <FaGraduationCap className="banner__social__scholar" />
           </a>
         </div>
 

@@ -1,0 +1,166 @@
+.d__banner {
+  background-image: url(../../../public/ai.gif);
+  background-color: #1d74b7;
+  background-blend-mode: lighten;
+  width: 100%;
+  user-select: none !important;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.d__banner__social {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+.d__banner__social > a {
+  text-decoration: none !important;
+  margin: 5px;
+}
+.d__banner__social__facebook {
+  color: #2ba5da;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.d__banner__social__x {
+  color: white;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.d__banner__social__linkedin {
+  color: #0073b1;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.d__banner__social__instagram {
+  color: #dd0f26;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.d__banner__social__github {
+  color: white;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.d__banner__social__scholar {
+  color: #5c95f4;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.d__banner__home {
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  user-select: none;
+}
+.d__banner__content {
+  background: rgba(0, 0, 0, 0.7);
+  flex: 1;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+}
+.d__banner__content > h1 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  top: -200px;
+  margin-bottom: 10px !important;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.d__banner__content > h1 > span {
+  color: cornflowerblue !important;
+  font-size: 0.7rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.d__banner > small {
+  color: white;
+  font-weight: normal;
+  font-size: 12px !important;
+  letter-spacing: unset;
+  text-align: center !important;
+  letter-spacing: 2px;
+}
+.d__banner__content > p {
+  user-select: none;
+  font-size: 25px;
+  letter-spacing: 2px;
+  animation: p-animation 1s ease-out 1s 1 alternate forwards !important;
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+  left: -2000px;
+}
+.d__banner__content > h1 {
+  animation: header-animation 1.5s ease-out 1s 1 alternate forwards;
+}
+@keyframes header-animation {
+  from {
+    top: -200px;
+  }
+  to {
+    top: 40px;
+  }
+}
+
+@keyframes p-animation {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.d__banner__content > small {
+  animation: small-animation 10s ease-out 1s 1 alternate forwards !important;
+}
+@keyframes small-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .d__banner__content > h1 {
+    font-size: 15px !important;
+  }
+  .d__banner__content > p > span {
+    font-size: 12px !important;
+  }
+  .d__banner__content > small {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .d__banner__content > h1 {
+    font-size: 15px !important;
+  }
+  .d__banner__content > p > span {
+    font-size: 12px !important;
+  }
+}

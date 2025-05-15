@@ -1,8 +1,22 @@
-import React from "react";
+import React, { JSX } from "react";
 import { Link } from "react-router-dom";
 import "./NavItem.css";
+
+type TTech = {
+  name: string;
+  color: string;
+  explanation: string;
+  icon: JSX.Element;
+  id: number;
+  path: string;
+  iconColor: string;
+  languages: {
+    icon: JSX.Element;
+    color: string;
+  }[];
+};
 interface Props {
-  tech: any;
+  tech: TTech;
 }
 const NavItem: React.FC<Props> = ({ tech }) => {
   const navRef = React.useRef(null);

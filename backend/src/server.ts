@@ -15,7 +15,14 @@ const HOST: string = "0.0.0.0";
   await require("./connection");
   app.use(
     cors({
-      origin: __isProd__ ? "https://crispen-gari.web.app" : "*",
+      origin: __isProd__
+        ? [
+            "https://crispen-gari.web.app",
+            "https://crispengari.com",
+            "https://www.crispengari.com",
+            "https://crispengari.vercel.app",
+          ]
+        : "*",
     })
   );
   app.use(express.json());

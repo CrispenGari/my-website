@@ -1,4 +1,11 @@
-.email .email__main {
+.email {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.email__main {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -7,7 +14,7 @@
   min-height: 60vh;
 }
 
-.email .email__main form {
+.email__main form {
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -17,7 +24,7 @@
   position: relative;
 }
 
-.email .email__main form .email__loader {
+.email__main form .email__loader {
   position: absolute;
   top: 0;
   height: 100%;
@@ -28,10 +35,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 100;
+  z-index: 10;
 }
 
-.email .email__main form .email__loader div {
+.email__main form .email__loader div {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -41,7 +48,7 @@
   animation: loading 1s ease 0s infinite;
 }
 
-.email .email__main form h1 {
+.email__main form h1 {
   width: 100%;
   padding: 10px;
   text-align: center;
@@ -55,15 +62,15 @@
   background: white;
 }
 
-.email .email__main form div {
+.email__main form div {
   width: 100%;
   display: flex;
   margin: 5px auto;
 }
 
-.email .email__main form input,
-.email .email__main form textarea,
-.email .email__main form div > input {
+.email__main form input,
+.email__main form textarea,
+.email__main form div > input {
   border: 1px solid cornflowerblue;
   outline: none;
   padding: 5px;
@@ -71,24 +78,24 @@
   border-radius: 5px;
 }
 
-.email .email__main form div > input {
+.email__main form div > input {
   flex: 1;
 }
 
-.email .email__main form div > input:first-of-type {
+.email__main form div > input:first-of-type {
   margin-right: 5px;
 }
 
-.email .email__main form input:last-of-type {
+.email__main form input:last-of-type {
   margin-top: 5px;
 }
 
-.email .email__main form textarea {
+.email__main form textarea {
   margin: 10px 0;
   height: 200px;
 }
 
-.email .email__main form button {
+.email__main form button {
   margin: 10px auto;
   padding: 5px;
   background: cornflowerblue;
@@ -96,15 +103,15 @@
   color: white;
   border-radius: 5px;
   width: 100%;
-  transition: background 0.3s;
+  transition: all 0.3s;
 }
 
-.email .email__main form button:hover {
+.email__main form button:hover {
   background: #42b983;
 }
 
-.email .email__main form .email__message,
-.email .email__main form .email__message--error {
+.email__main form .email__message,
+.email__main form .email__message--error {
   margin: 10px auto;
   user-select: none;
   background-color: #42b983;
@@ -115,7 +122,7 @@
   text-align: center;
 }
 
-.email .email__main form .email__message--error {
+.email__main form .email__message--error {
   background-color: red;
 }
 

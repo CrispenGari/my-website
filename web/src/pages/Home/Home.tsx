@@ -5,10 +5,11 @@ import {
   Card,
   Footer,
   Header,
+  HomeCard,
   NavItem,
   Prompt,
 } from "../../components";
-import { techs } from "../../data";
+import { techs, lessons, projects } from "../../data";
 interface Props {}
 const Home: React.FC<Props> = () => {
   return (
@@ -35,18 +36,18 @@ const Home: React.FC<Props> = () => {
       </div>
 
       <h1>You want Tutorship Services?</h1>
-      {/* <div className="home__container">
+      <div className="home__container">
         {lessons.map((lesson, i) => (
           <HomeCard key={i.toString()} data={lesson} />
         ))}
-      </div> */}
+      </div>
 
       <h1>You want to propose for a new Project?</h1>
-      {/* <div className="home__container">
+      <div className="home__container">
         {projects.map((project, i) => (
           <HomeCard key={i.toString()} data={project} />
         ))}
-      </div> */}
+      </div>
 
       <Footer />
     </div>

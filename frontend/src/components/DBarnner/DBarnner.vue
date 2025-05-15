@@ -224,10 +224,5 @@ export default {
       font-size: 12px !important;
     }
   }
-  @media (orientation: landscape) {
-    // .barner__content > small {
-    //   display: none !important;
-    // }
-  }
 }
 </style>

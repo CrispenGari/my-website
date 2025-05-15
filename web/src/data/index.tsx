@@ -3,6 +3,16 @@ import { MdWeb, MdDesktopMac } from "react-icons/md";
 import { TbBrandCpp } from "react-icons/tb";
 import { SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
+
+import {
+  MdThumbUp,
+  MdSportsBasketball,
+  MdPublic,
+  MdCake,
+  MdCode,
+  MdHistory,
+} from "react-icons/md";
+
 export const techs = [
   {
     name: "Data Science, Machine Learning, Deep Learning and AI.",
@@ -86,7 +96,6 @@ export const lessons = [
   },
   {
     imgURL: "/web.png",
-
     title: "Web Development",
     description: "Learn how to create web apps and websites from scratch.",
     btnTitle: "REQUEST",
@@ -140,5 +149,102 @@ export const projects = [
     description:
       "If you want Crispen to help you with your Desktop App project.",
     btnTitle: "PROPOSE",
+  },
+];
+
+export const abouts = [
+  {
+    icon: MdThumbUp,
+    color: "#8731d2",
+    iconColor: "lightblue",
+    title: "Likes",
+    id: 7,
+    content:
+      "Interested in Artificial Intelligence, Machine Learning, Open Computer Vision, Natural Language Processing. Also a huge fan of Web Development with React, Vue, Angular and Webpack.",
+  },
+  {
+    icon: MdSportsBasketball,
+    color: "#8731d2",
+    iconColor: "purple",
+    title: "Sports",
+    id: 2,
+    content: "A huge football fan of Real Madrid and Chelsea.",
+  },
+  {
+    icon: MdPublic,
+    color: "#8731d2",
+    iconColor: "lime",
+    title: "Nationality",
+    id: 3,
+    content:
+      "Tinashe Crispen Garidzira (aka Crispen Gari) is originally from Zimbabwe.",
+  },
+  {
+    icon: MdCake,
+    color: "#8731d2",
+    iconColor: "green",
+    title: "Age",
+    id: 4,
+    content: `${new Date().getFullYear() - 1999} years old.`,
+  },
+  {
+    icon: MdCake,
+    color: "#8731d2",
+    iconColor: "orange",
+    title: "Birthday",
+    id: 5,
+    content: "I was born 5 October 1999",
+  },
+  {
+    icon: MdCode,
+    color: "#8731d2",
+    iconColor: "orangered",
+    title: "Programming Languages",
+    id: 6,
+    content:
+      "I code in C, C++, Java, JavaScript and Python. Python, JavaScript and TypeScript being my favorite.",
+  },
+  {
+    icon: MdHistory,
+    color: "#8731d2",
+    iconColor: "blue",
+    title: "Programming History",
+    id: 1,
+    content:
+      "My programming history was a horror movie. I was eager to learn the world of technologies and explore how computers interact with humans. I'm a self-taught developer who loves reading programming books and official docs. I've coded in Python, C#, C++, C, JavaScript, PHP, TypeScript, and Java. Now I'm a huge fan of Artificial Intelligence using TensorFlow, Scikit-Learn, and PyTorch.",
+  },
+];
+
+export const banners = [
+  {
+    name: "datascience",
+    displayName: "Data Science",
+    color: "#1d74b7",
+  },
+  {
+    name: "web",
+    displayName: "Web Development",
+    color: "#42b983",
+  },
+  {
+    name: "mobile",
+    displayName: "Mobile Development",
+    color: "#8731d2",
+  },
+  {
+    name: "desktop",
+    displayName: "Desktop Development",
+
+    color: "#0074e8",
+  },
+  {
+    name: "about",
+    displayName: "About Me",
+    color: "#0074e8",
+  },
+  {
+    name: "projects",
+    displayName: "Projects",
+    color: "#0074e8",
   },
 ];

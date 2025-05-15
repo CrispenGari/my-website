@@ -61,17 +61,6 @@ const Card: React.FC<Props> = () => {
             computer vision.
           </p>
         </div>
-        <p>
-          I am a passionate Full-Stack developer with expertise in web, mobile,
-          and desktop development. I have successfully built projects using
-          modern JavaScript frameworks like React, Vue, and Webpack. I enjoy
-          backend development with <strong>TypeScript/JavaScript</strong>,{" "}
-          <strong>Python</strong>, and
-          <strong>Java</strong>, as well as working with ORM databases.
-          Additionally, I created an Object Relational Mapping (ORM) library for
-          Python called
-          <strong>dataloom</strong>.
-        </p>
         <BarView />
       </div>
     </div>

@@ -1,6 +1,3 @@
-.header__nav__active {
-  color: #42b983 !important;
-}
 .header {
   user-select: none;
   display: flex;
@@ -18,13 +15,16 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  color: cornflowerblue !important;
 }
 .header__content__navs > a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   margin-right: 10px;
+  color: cornflowerblue;
 }
+
 .header__nav {
   white-space: nowrap;
 }
@@ -33,8 +33,17 @@
   font-size: 16px;
   font-weight: 500;
   margin-right: 10px;
+  color: cornflowerblue !important;
 }
-
+.header__navs__left > .header__nav__active {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.header__nav__active {
+  color: #42b983 !important;
+}
 @media only screen and (max-width: 600px) {
   .header__nav {
     font-size: 13px !important;

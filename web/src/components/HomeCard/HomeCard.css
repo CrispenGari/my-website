@@ -1,0 +1,61 @@
+.home__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  user-select: none;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.home__card__prices {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+.home__card__prices > h2 {
+  font-size: 1rem !important;
+}
+.home__card__prices > h3 {
+  text-decoration: line-through red;
+  color: gray;
+  font-size: 0.7rem !important
+    ;
+}
+
+.home__card > button {
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid transparent;
+  background: cornflowerblue;
+  transition: all 1s;
+}
+.home__card > button:hover {
+  background: #42b983;
+}
+.home__card > button.home__card__btn--primary {
+  background: #42b983;
+}
+.home__card > button.home__card__btn--primary:hover {
+  background: cornflowerblue;
+}
+.home__card > img {
+  width: 100%;
+  -webkit-user-drag: none;
+  height: 130px;
+  object-fit: cover;
+}
+.home__card > h1 {
+  border: unset;
+  padding: unset;
+  text-align: unset;
+  margin: 3px 0;
+  text-transform: unset;
+}
+.home__card > p {
+  color: gray;
+}

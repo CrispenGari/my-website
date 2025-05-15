@@ -1,0 +1,80 @@
+.project__card {
+  width: 100%;
+  max-width: 400px;
+  height: fit-content;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  border-bottom: 1px solid lightgray;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.project__card__long_desc {
+  transition: all 1s;
+}
+.project__card > p {
+  padding: unset !important;
+  margin: unset !important;
+}
+.project__card > span {
+  color: #0073b1 !important;
+  cursor: pointer;
+  margin: 5px 0;
+  transition: all 1s;
+}
+.project__card__languages {
+  margin-bottom: 5px;
+  padding: 0;
+  display: flex;
+}
+.project__card__languages > span {
+  color: lightgray;
+  padding: 0;
+  margin: 0;
+  margin-right: 5px;
+}
+.project__card > h1 {
+  color: #0073b1;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.project__card > img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  align-self: center;
+  margin: 5px auto;
+  -webkit-user-drag: none;
+}
+.project__card__bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.project__card__bottom > p {
+  color: #42b983;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+.project__card__bottom > a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  .project__card__icon {
+    margin-right: 5px;
+  }
+}
+.project__card__bottom > a > .project__card__icon {
+  margin-right: 5px;
+}
+.project__card__type {
+  color: #42b983;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 5px 0;
+}

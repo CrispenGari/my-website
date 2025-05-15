@@ -5,3 +5,7 @@ export { default as Card } from "./Card/Card";
 export { default as Prompt } from "./Prompt/Prompt";
 export { default as BarView } from "./BarView/BarView";
 export { default as NavItem } from "./NavItem/NavItem";
+export { default as HomeCard } from "./HomeCard/HomeCard";
+export { default as DBanner } from "./DBarnner/DBarnner";
+export { default as AboutContent } from "./AboutContent/AboutContent";
+export { default as ProjectCard } from "./ProjectCard/ProjectCard";

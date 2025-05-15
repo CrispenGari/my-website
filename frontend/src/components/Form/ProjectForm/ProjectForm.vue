@@ -38,8 +38,7 @@
       ></textarea>
       <small>
         <strong>Help:</strong>
-        Describe your project in summary. Paragraphs are surperated by new
-        lines.
+        Describe your project in summary. Paragraphs are separated by new lines.
       </small>
     </div>
     <div class="project__form__input">
@@ -52,7 +51,7 @@
       />
       <small>
         <strong>Help:</strong>
-        Enter techs used surperated by a single space.
+        Enter techs used separated by a single space.
       </small>
     </div>
     <div class="project__form__input">
@@ -65,7 +64,7 @@
       />
       <small>
         <strong>Help:</strong>
-        Enter languages used surperated by a single space.
+        Enter languages used separated by a single space.
       </small>
     </div>
     <div class="project__form__input">
@@ -92,14 +91,10 @@
           placeholder="Project GitHub URL"
           hidden
         />
-        <p>
-          Drag and drop a file here. Or click to select.
-        </p>
+        <p>Drag and drop a file here. Or click to select.</p>
       </label>
     </div>
-    <button type="submit">
-      Publish
-    </button>
+    <button type="submit">Publish</button>
     <ProjectPreviewVue
       :projectSummary="projectSummary"
       :projectName="projectName"
