@@ -145,7 +145,9 @@ const Blog = () => {
             I am a software developer and AI researcher focused on mobile health
             (mHealth), mobile agriculture (mAgric), deep learning, and machine
             learning. I build AI-powered systems that solve real-world problems
-            using robust data-driven methods.
+            using robust data-driven methods. I am a winner of Hackerthons and
+            coding competitions, a good presenter and hard-working TECH
+            enthusiast.
           </p>
         </motion.div>
 
@@ -159,9 +161,9 @@ const Blog = () => {
           <ul className="grid grid-cols-2 gap-3 text-gray-300 text-sm">
             <li>Python, C++, Java, TypeScript</li>
             <li>PyTorch, TensorFlow, Scikit-learn</li>
-            <li>React, React Native, Vue</li>
-            <li>Django, Flask</li>
-            <li>PostgreSQL, MongoDB</li>
+            <li>React, React Native, NextJS, Vue</li>
+            <li>Django, Flask, NodeJS</li>
+            <li>PostgreSQL, MongoDB, MySQL, Firebase </li>
             <li>Docker, Git, Hugging Face</li>
           </ul>
         </motion.div>
@@ -206,7 +208,7 @@ const Blog = () => {
       {/* Interactive SQL Terminal */}
       <section className="py-20 px-6 max-w-5xl mx-auto">
         <h2 className="text-3xl font-semibold mb-6 flex items-center gap-3">
-          <FaTerminal /> Interactive SQL Console
+          <FaTerminal className="header__icon" /> Interactive SQL Console
         </h2>
         <div className="bg-black text-green-400 font-mono rounded-xl p-6 shadow-lg">
           {sqlOutput.map((line, i) => (
