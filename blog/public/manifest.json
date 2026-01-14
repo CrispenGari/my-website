@@ -1,0 +1,28 @@
+{
+  "short_name": "Crispen Gari",
+  "name": "Tinashe Crispen Garidzira | AI Researcher & Software Developer",
+  "description": "AI Researcher focused on mHealth, mAgric, Deep Learning, and Intelligent Systems.",
+  "icons": [
+    {
+      "src": "/me.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/me.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/me.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "categories": ["technology", "education", "research", "ai", "software"]
+}

@@ -1,0 +1,8 @@
+# https://www.robotstxt.org/robotstxt.html
+# Website: https://www.crispengari.com
+# Owner: Tinashe Crispen Garidzira
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.crispengari.com/sitemap.xml

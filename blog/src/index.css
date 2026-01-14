@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css?family=Trirong);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Trirong", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+small {
+  font-family: "Trirong", serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.social__icon {
+  font-size: 1.5rem !important;
+}
+h2 > .header__icon {
+  font-size: 2rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .social__icon {
+    font-size: 1rem !important;
+  }
+  h2 > .header__icon {
+    font-size: 1.5rem !important;
+  }
+  .my__name {
+    font-size: 2.5rem !important;
+  }
+}
